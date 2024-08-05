@@ -1,5 +1,5 @@
 import React from "react";
-import { BsSearch,BsGithub, BsLinkedin, BsFacebook, BsInstagram, BsYoutube } from "react-icons/bs";
+import { BsGithub, BsFacebook, BsInstagram, BsYoutube } from "react-icons/bs";
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
