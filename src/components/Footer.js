@@ -38,7 +38,7 @@ const Footer = () => {
           <h4 className="text-white mb-4">Contact Us</h4>
           <div>
             <address className="text-white fs-6">
-              Address: 135, Hai Ba Trung, <br></br> DaKao, t 1, <br></br> Ho Chi Minh City
+              Address: 135, Hai Ba Trung, <br></br> DaKao, District 1, <br></br> Ho Chi Minh City
             </address>
             <a href="tel: +84 377197374" className="mt-4 d-block mb-3 text-white">+84 377197374</a>
             <a href="mailto: tuanxyz113@gmail.com" className="mt-4 d-block mb-3 text-white">tuanxyz113@gmail.com</a>
