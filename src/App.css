@@ -331,3 +331,18 @@ footer .input-group-text {
   color: white;
 }
 /* famous card end */
+
+/* our store */
+.filter-card{
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+.filter-tittle{
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600px;
+  color: var(--color-1c1c1b);
+
+}
+/* our store end */
