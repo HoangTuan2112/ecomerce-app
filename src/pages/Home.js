@@ -231,7 +231,11 @@ const Home = () => {
           <div className="row">
             <div className="col-3">
               <div className="famous-card position-relative">
-                <img src="images/famous-1.jpg" className="img-fluid" alt="famous"></img>
+                <img
+                  src="images/famous-1.jpg"
+                  className="img-fluid"
+                  alt="famous"
+                ></img>
                 <div className="famous-content position-absolute ">
                   <h5>Big Screen</h5>
                   <h6>Smart Watch Series 7</h6>
@@ -241,7 +245,11 @@ const Home = () => {
             </div>
             <div className="col-3">
               <div className="famous-card position-relative">
-                <img src="images/famous-2.jpg" className="img-fluid" alt="famous"></img>
+                <img
+                  src="images/famous-2.jpg"
+                  className="img-fluid"
+                  alt="famous"
+                ></img>
                 <div className="famous-content position-absolute ">
                   <h5 className="text-dark">Studio Display</h5>
                   <h6 className="text-dark">600 nits of brightness</h6>
@@ -251,21 +259,33 @@ const Home = () => {
             </div>
             <div className="col-3">
               <div className="famous-card position-relative">
-                <img src="images/famous-3.jpg" className="img-fluid" alt="famous"></img>
+                <img
+                  src="images/famous-3.jpg"
+                  className="img-fluid"
+                  alt="famous"
+                ></img>
                 <div className="famous-content position-absolute ">
                   <h5 className="text-dark">Smartphones</h5>
                   <h6 className="text-dark">Smartphone 13 Pro</h6>
-                  <p className="text-dark">Now in Green. From $999.00 or $41.62/month for 24 months</p>
+                  <p className="text-dark">
+                    Now in Green. From $999.00 or $41.62/month for 24 months
+                  </p>
                 </div>
               </div>
             </div>
             <div className="col-3">
               <div className="famous-card position-relative">
-                <img src="images/famous-4.jpg" className="img-fluid" alt="famous"></img>
+                <img
+                  src="images/famous-4.jpg"
+                  className="img-fluid"
+                  alt="famous"
+                ></img>
                 <div className="famous-content position-absolute ">
                   <h5 className="text-dark">Home Speakers</h5>
                   <h6 className="text-dark">Room-filling sound</h6>
-                  <p className="text-dark">From $699 or $116.58/month for 12 months</p>
+                  <p className="text-dark">
+                    From $699 or $116.58/month for 12 months
+                  </p>
                 </div>
               </div>
             </div>
@@ -344,10 +364,20 @@ const Home = () => {
             <div className="col-12">
               <h3 className="section-heading">Our Lastest Blogs</h3>
             </div>
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
+            <div className="row">
+              <div className="col-3">
+                <BlogCard />
+              </div>
+              <div className="col-3">
+                <BlogCard />
+              </div>
+              <div className="col-3">
+                <BlogCard />
+              </div>
+              <div className="col-3">
+                <BlogCard />
+              </div>
+            </div>
           </div>
         </div>
       </section>
