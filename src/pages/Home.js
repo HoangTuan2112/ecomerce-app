@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
 import BlogCard from "../components/BlogCard";
+import ProductCard from "../components/ProductCard";
+import SpecialProduct from "../components/SpecialProduct";
 const Home = () => {
   return (
     <>
@@ -130,21 +132,21 @@ const Home = () => {
             d-flex justify-content-between 
             align-items-center flex-wrap"
               >
-                <div className="d-flex gap-50 align-items-center">
+                <div className="d-flex gap-60 align-items-center">
                   <div>
                     <h6>Cameras</h6>
                     <p>10 items</p>
                   </div>
                   <img src="images/camera.jpg" alt="camera"></img>
                 </div>
-                <div className="d-flex gap-50 align-items-center">
+                <div className="d-flex gap-60 align-items-center">
                   <div>
                     <h6>Smart TV</h6>
                     <p>10 items</p>
                   </div>
                   <img src="images/tv.jpg" alt="tv"></img>
                 </div>
-                <div className="d-flex gap-50 align-items-center">
+                <div className="d-flex gap-60 align-items-center">
                   <div>
                     <h6>Smart Watches</h6>
                     <p>10 items</p>
@@ -156,7 +158,7 @@ const Home = () => {
                     height={"110px"}
                   ></img>
                 </div>
-                <div className="d-flex gap-50 align-items-center">
+                <div className="d-flex gap-60 align-items-center">
                   <div>
                     <h6> Gamming</h6>
                     <p>10 items</p>
@@ -168,21 +170,21 @@ const Home = () => {
                     height={"110px"}
                   ></img>
                 </div>
-                <div className="d-flex gap-50 align-items-center">
+                <div className="d-flex gap-60 align-items-center">
                   <div>
                     <h6>Headphone</h6>
                     <p>10 items</p>
                   </div>
                   <img src="images/headphone.jpg" alt="headphone"></img>
                 </div>
-                <div className="d-flex gap-50 align-items-center">
+                <div className="d-flex gap-60 align-items-center">
                   <div>
                     <h6>Speaker</h6>
                     <p>10 items</p>
                   </div>
                   <img src="images/speaker.jpg" alt="speaker"></img>
                 </div>
-                <div className="d-flex gap-50 align-items-center">
+                <div className="d-flex gap-60 align-items-center">
                   <div>
                     <h6>Laptops</h6>
                     <p>10 items</p>
@@ -194,7 +196,7 @@ const Home = () => {
                     height={"110px"}
                   ></img>
                 </div>
-                <div className="d-flex gap-50 align-items-center">
+                <div className="d-flex gap-60 align-items-center">
                   <div>
                     <h6> Smart Phone</h6>
                     <p>10 items</p>
@@ -207,6 +209,61 @@ const Home = () => {
                   ></img>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="featured-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Featured Collection</h3>
+            </div>
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+          </div>
+        </div>
+      </section>
+      <section className="famous-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-3">
+              <div className="famous-card bg-dark text-white">
+                <h5>Big Screen</h5>
+                <h6>Smart Watch Series 7</h6>
+                <p>From $399 or $16.62/month for 24 months</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="special-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Special Products</h3>
+            </div>
+          </div>
+          <div className="row ">
+            <SpecialProduct />
+            <SpecialProduct />
+            <SpecialProduct />
+          </div>
+        </div>
+      </section>
+      <section className="popular-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">Our Popular Products</h3>
+            </div>
+            <div className="row">
+              <ProductCard />
+              <ProductCard />
+              <ProductCard />
+              <ProductCard />
             </div>
           </div>
         </div>
@@ -247,12 +304,13 @@ const Home = () => {
           </div>
         </div>
       </section>
+
       <section className="blog-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
-          <div className="col-12">
-            <h3 className="section-heading">Our Lastest Blogs</h3>
-          </div>
+            <div className="col-12">
+              <h3 className="section-heading">Our Lastest Blogs</h3>
+            </div>
             <BlogCard />
             <BlogCard />
             <BlogCard />
