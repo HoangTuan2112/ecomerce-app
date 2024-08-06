@@ -301,3 +301,33 @@ footer .input-group-text {
   background-color: white;
 }
 /* Special product end */
+
+/* famous card */
+.famous-card .famous-content{
+  top:5%;
+  left:5%;
+}
+.famous-card img{
+  border-radius: 10px;
+}
+.famous-card .famous-content h5{
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400px;
+  color: white;
+  margin-bottom:  7px;
+}
+.famous-card .famous-content  h6{
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: 500;
+  color: white;
+  
+}
+.famous-card .famous-content p{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 100;
+  color: white;
+}
+/* famous card end */
