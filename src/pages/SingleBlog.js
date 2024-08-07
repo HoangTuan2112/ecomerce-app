@@ -15,12 +15,15 @@ const SingleBlog = () => {
           <div className="row">
             <div className="col-12">
               <div className="single-blog-card">
-              <Link to="/blog" ><HiOutlineArrowLeft className="fs-4"></HiOutlineArrowLeft>Go Back to Blogs</Link>
+                <Link to="/blog">
+                  <HiOutlineArrowLeft className="fs-4"></HiOutlineArrowLeft>Go
+                  Back to Blogs
+                </Link>
                 <h3 className="tittle">
                   A beautiful sunday morning renaissance
                 </h3>
                 <img
-                  src="images/blog-1.jpg"
+                  src="/images/blog-1.jpg"
                   class="img-fluid w-100 my-4"
                   alt="blog"
                 ></img>
