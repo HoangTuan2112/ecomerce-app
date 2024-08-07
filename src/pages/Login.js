@@ -7,8 +7,8 @@ import BreadCrumb from "../components/BreadCrumb";
 const Login = () => {
   return (
     <div>
-      <Meta title="Login" />
-      <BreadCrumb title="Login" />
+      <Meta tittle="Login" />
+      <BreadCrumb tittle="Login" />
       <div className="login-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">

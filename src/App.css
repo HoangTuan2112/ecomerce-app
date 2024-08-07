@@ -537,3 +537,10 @@ footer .input-group-text {
   color: var(--color-777777);
 }
 /* Auth end */
+
+/* Policy page */
+.policy{
+  background-color: white;
+  padding: 30px;
+}
+/* Policy end */

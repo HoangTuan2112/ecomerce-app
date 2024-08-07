@@ -7,7 +7,7 @@ const Blog = () => {
   return (
     <div>
       <Meta tittle="Blog" />
-      <BreadCrumb title="Blog" />
+      <BreadCrumb tittle="Blog" />
       <div className="blog-wrapper home-wrapper-2 py-5">
         <div className="container-xxl">
           <div className="row">

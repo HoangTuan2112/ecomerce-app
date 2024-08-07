@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div>
       <Meta tittle="Contact" />
-      <BreadCrumb title="contact" />
+      <BreadCrumb tittle="contact" />
       <div className="contact-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">

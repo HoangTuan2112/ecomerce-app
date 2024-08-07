@@ -6,7 +6,7 @@ const WishList = () => {
   return (
     <div>
       <Meta tittle="Wishlist" />
-      <BreadCrumb title="Wishlist" />
+      <BreadCrumb tittle="Wishlist" />
       <div className="wishlist-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">

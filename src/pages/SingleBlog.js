@@ -8,8 +8,8 @@ import { HiOutlineArrowLeft } from "react-icons/hi";
 const SingleBlog = () => {
   return (
     <div>
-      <Meta title="Single Blog" />
-      <BreadCrumb title="Single Blog" />
+      <Meta tittle="Single Blog" />
+      <BreadCrumb tittle="Single Blog" />
       <div className="blog-wrapper home-wrapper-2 py-5">
         <div className="container-xxl">
           <div className="row">

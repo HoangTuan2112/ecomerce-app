@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 const Forgotpassword = () => {
   return (
     <div>
-      <Meta title="Forgot Password" />
-      <BreadCrumb title="Forgot Password" />
+      <Meta tittle="Forgot Password" />
+      <BreadCrumb tittle="Forgot Password" />
       <div className="login-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">

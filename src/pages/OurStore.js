@@ -11,7 +11,7 @@ const OurStore = () => {
   return (
     <div>
       <Meta tittle="Our Store" />
-      <BreadCrumb title="Our Store" />
+      <BreadCrumb tittle="Our Store" />
       <div className="store-wrapper home-wrapper-2 py-5">
         <div className="container-xxl">
           <div className="row">

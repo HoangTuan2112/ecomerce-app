@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const BreadCrumb = (props) => {
-  const { title } = props;
+  const { tittle } = props;
   return (
     <div className="breadcrumb py -4">
       <div className="container-xxl">
@@ -12,7 +12,7 @@ const BreadCrumb = (props) => {
               <Link to="/" className="text-dark">
                 Home
               </Link>
-              /{title}
+              /{tittle}
             </p>
           </div>
         </div>

@@ -16,6 +16,10 @@ import Forgotpassword from "./pages/Forgotpassword";
 import Cart from "./components/Cart";
 import Resetpassword from "./pages/Resetpassword";
 import SingleBlog from "./pages/SingleBlog";
+import TermAndCondition from "./pages/TermAndCondition";
+import RefundPolicy from "./pages/RefundPolicy";
+import ShippingPolicy from "./pages/ShippingPolicy";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 function App() {
   return (
     <>
@@ -35,6 +39,11 @@ function App() {
             <Route path="forgotpassword" element={<Forgotpassword/>} />
             <Route path="cart" element={<Cart/>} />
             <Route path="resetpassword" element={<Resetpassword />} />
+            <Route path="privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="shipping-policy" element={<ShippingPolicy />} />
+            <Route path="refund-policy" element={<RefundPolicy />} />
+            <Route path="term-conditions" element={<TermAndCondition />} />
+
             <Route path="*" element={<Home />} />
           </Route>
         </Routes>
