@@ -503,44 +503,88 @@ footer .input-group-text {
 /* Compare page end */
 
 /* Auth */
-.auth-card{
+.auth-card {
   padding: 20px;
   background-color: white;
   width: 500px;
   margin: 30px auto;
   border-radius: 10px;
 }
-.auth-card h3{
+.auth-card h3 {
   font-size: 19px;
   font-weight: 500;
   color: var(--color-777777);
 }
-.auth-card .form-control{
+.auth-card .form-control {
   height: 50px;
   background-color: var(--color-f5f5f7);
   color: var(--color-777777);
   font-size: 14px;
   border-radius: 10px;
   border-color: transparent;
-
 }
-.auth-card .signup{
+.auth-card .signup {
   background-color: var(--color-febd69);
   color: var(--color-131921);
 }
-.auth-card .signup:hover{
+.auth-card .signup:hover {
   background-color: var(--color-131921);
   color: white;
 }
-.auth-card p{
+.auth-card p {
   font-size: 13px;
   color: var(--color-777777);
 }
 /* Auth end */
 
 /* Policy page */
-.policy{
+.policy {
   background-color: white;
   padding: 30px;
 }
 /* Policy end */
+
+/* Main product page */
+.review-inner-wrapper {
+  background-color: white;
+  padding: 30px;
+}
+.review-head {
+  border-bottom: 1px solid var(--color-3b4149);
+  padding-bottom: 20px;
+}
+.description-wrapper h4, .review-wrapper h3 {
+  font-size: 18px;
+  color: var(--color-1c1c1b);
+}
+.review-head p, .review-head a {
+  font-size: 14px;
+  color: var(--color-777777);
+}
+.review-form h4{
+font-size: 16px;
+color: var(--color-777777);
+}
+.review p{
+  font-size: 14px;
+  color: var(--color-777777);
+}
+.review-form{
+  border-bottom: 1px solid var(--color-3b4149);
+}
+.review:not(:last-child){
+  border-bottom: 1px solid var(--color-3b4149);
+}
+.review h6{
+  font-size: 16px;
+  color: var(--color-1c1c1b);
+}
+.main-product-image{
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+.main-product-image >div{
+  border: 1px solid rgba(0, 0, 0, 0.25)
+}
+/* Main product page end */

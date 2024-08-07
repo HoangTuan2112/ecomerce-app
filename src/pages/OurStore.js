@@ -88,7 +88,7 @@ const OurStore = () => {
                   </div>
                   <h5 className="sub-tittle">Colors</h5>
                   <div>
-               <Color/>
+                    <Color />
                   </div>
                   <h5 className="sub-tittle">Size</h5>
                   <div>
@@ -178,7 +178,7 @@ const OurStore = () => {
                   <div className="random-products d-flex mb-3">
                     <div className="w-25">
                       <img
-                        src="images/watch.jpg"
+                        src="/images/watch.jpg"
                         alt="watch"
                         className="img-fluid"
                       />
@@ -198,7 +198,7 @@ const OurStore = () => {
                   <div className="random-products d-flex">
                     <div className="w-25">
                       <img
-                        src="images/watch.jpg"
+                        src="/images/watch.jpg"
                         alt="watch"
                         className="img-fluid"
                       />
@@ -257,7 +257,7 @@ const OurStore = () => {
                         onClick={() => {
                           setGrid(3);
                         }}
-                        src="images/gr4.svg"
+                        src="/images/gr4.svg"
                         className="d-block img-fluid"
                         alt="grid-view"
                       />{" "}
@@ -265,7 +265,7 @@ const OurStore = () => {
                         onClick={() => {
                           setGrid(4);
                         }}
-                        src="images/gr3.svg"
+                        src="/images/gr3.svg"
                         className="d-block img-fluid"
                         alt="grid-view"
                       />
@@ -273,7 +273,7 @@ const OurStore = () => {
                         onClick={() => {
                           setGrid(6);
                         }}
-                        src="images/gr2.svg"
+                        src="/images/gr2.svg"
                         className="d-block img-fluid"
                         alt="grid-view"
                       />
@@ -281,7 +281,7 @@ const OurStore = () => {
                         onClick={() => {
                           setGrid(12);
                         }}
-                        src="images/gr.svg"
+                        src="/images/gr.svg"
                         className="d-block img-fluid"
                         alt="grid-view"
                       />
