@@ -456,29 +456,31 @@ footer .input-group-text {
   border-color: transparent;
   padding: 10px;
 }
-.contact-wrapper-inner ul{
+.contact-wrapper-inner ul {
   list-style: none;
 }
 /* Contact page end */
 
 /* Compare page */
-.compare-product-card{
+.compare-product-card {
   padding: 20px 15px;
   background-color: white;
   border-radius: 10px;
 }
-.compare-product-card-details h5 .title{
+.compare-product-details h5.tittle,
+.wishlist-card h5.title {
   font-size: 15px;
   line-height: 22px;
   font-weight: 500;
   color: var(--color-1c1c1b);
 }
-.compare-product-card-details h6 .price{
+.compare-product-details h6.price,
+.wishlist-card h6.price {
   font-size: 15px;
   line-height: 22px;
   font-weight: 400;
 }
-.compare-product-card .product-detail{
+.compare-product-card .product-detail {
   display: flex;
   justify-content: space-between;
   align-items: center;
