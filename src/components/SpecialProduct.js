@@ -8,7 +8,7 @@ const SpecialProduct = () => {
         <div className="d-flex justify-content-between">
           <div>
             <img
-              src="images/watch.jpg"
+              src="/images/watch.jpg"
               alt="watch"
               className="special-product-img img-fluid"
             />

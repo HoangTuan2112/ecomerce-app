@@ -14,7 +14,7 @@ const Home = () => {
               <div className="main-banner  position-relative">
                 <img
                   className="img-fluid rounded-3"
-                  src="images/main-banner-1.jpg"
+                  src="/images/main-banner-1.jpg"
                   alt="main banner"
                 ></img>
                 <div className="main-banner-contetnt position-absolute ">
@@ -30,7 +30,7 @@ const Home = () => {
                 <div className="small-banner  position-relative">
                   <img
                     className="img-fluid rounded-3"
-                    src="images/catbanner-01.jpg"
+                    src="/images/catbanner-01.jpg"
                     alt="main banner"
                   ></img>
                   <div className="small-banner-contetnt position-absolute ">
@@ -42,7 +42,7 @@ const Home = () => {
                 <div className="small-banner  position-relative">
                   <img
                     className="img-fluid rounded-3"
-                    src="images/catbanner-03.jpg"
+                    src="/images/catbanner-03.jpg"
                     alt="main banner"
                   ></img>
                   <div className="small-banner-contetnt position-absolute ">
@@ -54,7 +54,7 @@ const Home = () => {
                 <div className="small-banner  position-relative">
                   <img
                     className="img-fluid rounded-3"
-                    src="images/catbanner-02.jpg"
+                    src="/images/catbanner-02.jpg"
                     alt="main banner"
                   ></img>
                   <div className="small-banner-contetnt position-absolute ">
@@ -66,7 +66,7 @@ const Home = () => {
                 <div className="small-banner  position-relative">
                   <img
                     className="img-fluid rounded-3"
-                    src="images/catbanner-04.jpg"
+                    src="/images/catbanner-04.jpg"
                     alt="main banner"
                   ></img>
                   <div className="small-banner-contetnt position-absolute ">
@@ -85,35 +85,35 @@ const Home = () => {
           <div className="col-12">
             <div className="services d-flex align-items-center justify-content-between">
               <div className="d-flex align-items-center justify-content-betwen">
-                <img src="images/service.png" alt="service"></img>
+                <img src="/images/service.png" alt="service"></img>
                 <div>
                   <h6>Free Shipping</h6>
                   <p className="mb-0">From all orders over $100</p>
                 </div>
               </div>
               <div className="d-flex align-items-center justify-content-betwen">
-                <img src="images/service-02.png" alt="service"></img>
+                <img src="/images/service-02.png" alt="service"></img>
                 <div>
                   <h6>Daily Surprise Offers</h6>
                   <p className="mb-0">Save up to 25% off</p>
                 </div>
               </div>
               <div className="d-flex align-items-center justify-content-betwen">
-                <img src="images/service-03.png" alt="service"></img>
+                <img src="/images/service-03.png" alt="service"></img>
                 <div>
                   <h6>Support 24/7</h6>
                   <p className="mb-0">Shop with an expert</p>
                 </div>
               </div>
               <div className="d-flex align-items-center justify-content-betwen">
-                <img src="images/service-04.png" alt="service"></img>
+                <img src="/images/service-04.png" alt="service"></img>
                 <div>
                   <h6>Affordable Prices</h6>
                   <p className="mb-0">Get Factory direct price</p>
                 </div>
               </div>
               <div className="d-flex align-items-center justify-content-betwen">
-                <img src="images/service-05.png" alt="service"></img>
+                <img src="/images/service-05.png" alt="service"></img>
                 <div>
                   <h6>Secure Payments</h6>
                   <p className="mb-0">100% Protected Payments</p>
@@ -134,76 +134,96 @@ const Home = () => {
               >
                 <div className="d-flex gap-60 align-items-center">
                   <div>
-                    <h6>Cameras</h6>
-                    <p>10 items</p>
-                  </div>
-                  <img src="images/camera.jpg" alt="camera"></img>
-                </div>
-                <div className="d-flex gap-60 align-items-center">
-                  <div>
-                    <h6>Smart TV</h6>
-                    <p>10 items</p>
-                  </div>
-                  <img src="images/tv.jpg" alt="tv"></img>
-                </div>
-                <div className="d-flex gap-60 align-items-center">
-                  <div>
-                    <h6>Smart Watches</h6>
+                    <h6>Panerai</h6>
                     <p>10 items</p>
                   </div>
                   <img
-                    src="images/watch.jpg"
-                    alt="watch"
+                    src="https://th.bing.com/th?id=OIP.yAOT4tBgmpCsrKGsOaBIxAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                    alt="Panerai"
                     width={"110px"}
                     height={"110px"}
                   ></img>
                 </div>
                 <div className="d-flex gap-60 align-items-center">
                   <div>
-                    <h6> Gamming</h6>
+                    <h6>Longines</h6>
                     <p>10 items</p>
                   </div>
                   <img
-                    src="images/gamming.jpg"
-                    alt="gamming"
+                    src="https://www.jurawatches.co.uk/cdn/shop/files/longines_logo.webp?v=1660742756"
+                    alt="Longines"
                     width={"110px"}
                     height={"110px"}
                   ></img>
                 </div>
                 <div className="d-flex gap-60 align-items-center">
                   <div>
-                    <h6>Headphone</h6>
-                    <p>10 items</p>
-                  </div>
-                  <img src="images/headphone.jpg" alt="headphone"></img>
-                </div>
-                <div className="d-flex gap-60 align-items-center">
-                  <div>
-                    <h6>Speaker</h6>
-                    <p>10 items</p>
-                  </div>
-                  <img src="images/speaker.jpg" alt="speaker"></img>
-                </div>
-                <div className="d-flex gap-60 align-items-center">
-                  <div>
-                    <h6>Laptops</h6>
+                    <h6>Chopard</h6>
                     <p>10 items</p>
                   </div>
                   <img
-                    src="images/laptop.jpg"
-                    alt="laptop"
+                    src="https://www.jurawatches.co.uk/cdn/shop/files/Chopard_Logo_Brand_Page.jpg?v=1691683027"
+                    alt="Chopard"
                     width={"110px"}
                     height={"110px"}
                   ></img>
                 </div>
                 <div className="d-flex gap-60 align-items-center">
                   <div>
-                    <h6> Smart Phone</h6>
+                    <h6> Gucci</h6>
                     <p>10 items</p>
                   </div>
                   <img
-                    src="images/smartphone.jpg"
-                    alt="smartphone"
+                    src="https://www.jurawatches.co.uk/cdn/shop/files/guc_logo.jpg?v=1672928580"
+                    alt="Gucci"
+                    width={"110px"}
+                    height={"110px"}
+                  ></img>
+                </div>
+                <div className="d-flex gap-60 align-items-center">
+                  <div>
+                    <h6>Alsta</h6>
+                    <p>10 items</p>
+                  </div>
+                  <img
+                    src="https://th.bing.com/th?id=OIP.Jhd9uGgBbkKEGUbPJMLHEwAAAA&w=311&h=84&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                    alt="Alsta"
+                    width={"110px"}
+                    height={"110px"}
+                  ></img>
+                </div>
+                <div className="d-flex gap-60 align-items-center">
+                  <div>
+                    <h6>TUDOR </h6>
+                    <p>10 items</p>
+                  </div>
+                  <img
+                    src="https://th.bing.com/th?id=OIP.D31wXgnDAVGyTFzOc2WKhgHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                    alt="TUDOR"
+                    width={"110px"}
+                    height={"110px"}
+                  ></img>
+                </div>
+                <div className="d-flex gap-60 align-items-center">
+                  <div>
+                    <h6>Garmin Epix Pro</h6>
+                    <p>10 items</p>
+                  </div>
+                  <img
+                    src="https://www.jurawatches.co.uk/cdn/shop/files/logo_e929861f-403b-4b01-a753-8d937e393d55.jpg?v=1686131002"
+                    alt="Garmin Epix Pro"
+                    width={"110px"}
+                    height={"110px"}
+                  ></img>
+                </div>
+                <div className="d-flex gap-60 align-items-center">
+                  <div>
+                    <h6> RADO</h6>
+                    <p>10 items</p>
+                  </div>
+                  <img
+                    src="https://www.jurawatches.co.uk/cdn/shop/files/Rado_logo.jpg?v=1673009364"
+                    alt="RADO"
                     width={"110px"}
                     height={"110px"}
                   ></img>
@@ -232,7 +252,7 @@ const Home = () => {
             <div className="col-3">
               <div className="famous-card position-relative">
                 <img
-                  src="images/famous-1.jpg"
+                  src="/images/famous-1.jpg"
                   className="img-fluid"
                   alt="famous"
                 ></img>
@@ -246,7 +266,7 @@ const Home = () => {
             <div className="col-3">
               <div className="famous-card position-relative">
                 <img
-                  src="images/famous-2.jpg"
+                  src="/images/famous-2.jpg"
                   className="img-fluid"
                   alt="famous"
                 ></img>
@@ -260,7 +280,7 @@ const Home = () => {
             <div className="col-3">
               <div className="famous-card position-relative">
                 <img
-                  src="images/famous-3.jpg"
+                  src="/images/famous-3.jpg"
                   className="img-fluid"
                   alt="famous"
                 ></img>
@@ -276,7 +296,7 @@ const Home = () => {
             <div className="col-3">
               <div className="famous-card position-relative">
                 <img
-                  src="images/famous-4.jpg"
+                  src="/images/famous-4.jpg"
                   className="img-fluid"
                   alt="famous"
                 ></img>

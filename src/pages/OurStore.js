@@ -4,9 +4,18 @@ import Meta from "../components/Meta";
 import ReactStars from "react-rating-stars-component";
 import ProductCard from "../components/ProductCard";
 import Color from "../components/Color";
-
+import axios from "axios";
 const OurStore = () => {
   const [grid, setGrid] = React.useState(4);
+  const url = "https://669f2742b132e2c136fcdd36.mockapi.io/student/student";
+  const [products, setProducts] = React.useState([]);
+  React.useEffect(() => {
+    axios.get(url).then((res) => {
+      setProducts(res.data);
+      console.log(res);
+      console.log(products);
+    });
+  }, []);
 
   return (
     <div>
@@ -20,10 +29,14 @@ const OurStore = () => {
                 <h3 className="filter-tittle">Shop By Categories</h3>
                 <div>
                   <ul className="ps-0">
-                    <li>Watch</li>
-                    <li>Tv</li>
-                    <li>Camera</li>
-                    <li>Laptop</li>
+                    <li>Panerai</li>
+                    <li>Longines</li>
+                    <li>Chopard</li>
+                    <li>Gucci</li>
+                    <li>Alsta</li>
+                    <li>TUDOR </li>
+                    <li>Garmin Epix Pro</li>
+                    <li>RADO</li>
                   </ul>
                 </div>
               </div>
@@ -88,7 +101,7 @@ const OurStore = () => {
                   </div>
                   <h5 className="sub-tittle">Colors</h5>
                   <div>
-               <Color/>
+                    <Color />
                   </div>
                   <h5 className="sub-tittle">Size</h5>
                   <div>
@@ -136,49 +149,18 @@ const OurStore = () => {
                         XL (2)
                       </label>
                     </div>
-                    <div className="form-check">
-                      <input
-                        className="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="size"
-                      />
-                      <label className="form-check-label" htmlFor="size">
-                        XXL (2)
-                      </label>
-                    </div>
+                   
                   </div>
                 </div>
               </div>
-              <div className="filter-card mb-3">
-                <h3 className="filter-tittle">Products tag</h3>
-                <div>
-                  <div className="product-tags d-flex flex-wrap align-items-center gap-10">
-                    <span className="badge bg-light text-secondary rounded-3 py-2 px-3">
-                      Headphone
-                    </span>
-                    <span className="badge bg-light text-secondary rounded-3 py-2 px-3">
-                      Laptop
-                    </span>
-                    <span className="badge bg-light text-secondary rounded-3 py-2 px-3">
-                      Mobile
-                    </span>
-                    <span className="badge bg-light text-secondary rounded-3 py-2 px-3">
-                      Wire
-                    </span>
-                    <span className="badge bg-light text-secondary rounded-3 py-2 px-3">
-                      Headphone
-                    </span>
-                  </div>
-                </div>
-              </div>
+
               <div className="filter-card mb-3">
                 <h3 className="filter-tittle">Random Product</h3>
                 <div>
                   <div className="random-products d-flex mb-3">
                     <div className="w-25">
                       <img
-                        src="images/watch.jpg"
+                        src="/images/watch.jpg"
                         alt="watch"
                         className="img-fluid"
                       />
@@ -198,7 +180,7 @@ const OurStore = () => {
                   <div className="random-products d-flex">
                     <div className="w-25">
                       <img
-                        src="images/watch.jpg"
+                        src="/images/watch.jpg"
                         alt="watch"
                         className="img-fluid"
                       />
@@ -257,7 +239,7 @@ const OurStore = () => {
                         onClick={() => {
                           setGrid(3);
                         }}
-                        src="images/gr4.svg"
+                        src="/images/gr4.svg"
                         className="d-block img-fluid"
                         alt="grid-view"
                       />{" "}
@@ -265,7 +247,7 @@ const OurStore = () => {
                         onClick={() => {
                           setGrid(4);
                         }}
-                        src="images/gr3.svg"
+                        src="/images/gr3.svg"
                         className="d-block img-fluid"
                         alt="grid-view"
                       />
@@ -273,7 +255,7 @@ const OurStore = () => {
                         onClick={() => {
                           setGrid(6);
                         }}
-                        src="images/gr2.svg"
+                        src="/images/gr2.svg"
                         className="d-block img-fluid"
                         alt="grid-view"
                       />
@@ -281,7 +263,7 @@ const OurStore = () => {
                         onClick={() => {
                           setGrid(12);
                         }}
-                        src="images/gr.svg"
+                        src="/images/gr.svg"
                         className="d-block img-fluid"
                         alt="grid-view"
                       />
@@ -291,19 +273,21 @@ const OurStore = () => {
               </div>
               <div className="product-list pb-5">
                 <div className="d-flex gap-10 flex-wrap">
-                  <ProductCard grid={grid} />
-                  <ProductCard grid={grid} />
-                  <ProductCard grid={grid} />
-                  <ProductCard grid={grid} />
-                  <ProductCard grid={grid} />
-                  <ProductCard grid={grid} />
-                  <ProductCard grid={grid} />
-                  <ProductCard grid={grid} />
-                  <ProductCard grid={grid} />
-                  <ProductCard grid={grid} />
-                  <ProductCard grid={grid} />
-                  <ProductCard grid={grid} />
-                  <ProductCard grid={grid} />
+                  {products.map((product) => {
+                    return (
+                      <ProductCard
+                        key={product.id}
+                        img={product.img}
+                        title={product.tittle}
+                        price={product.price}
+                        rating={product.rating}
+                        img2={product.img2}
+                        brand={product.brand}
+                        description={product.description}
+                        grid={grid}
+                      />
+                    );
+                  })}
                 </div>
               </div>
             </div>

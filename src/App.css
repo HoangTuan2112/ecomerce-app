@@ -267,6 +267,7 @@ footer .input-group-text {
 }
 .product-card .product-image img {
   object-fit: contain;
+  height: 296px;
   transition: 0.3s;
 }
 .product-card .product-image > img:last-child {
