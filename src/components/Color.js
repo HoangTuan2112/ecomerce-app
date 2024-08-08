@@ -4,10 +4,10 @@ const Color = () => {
   return (
     <div>
       <ul className="colors ps-0">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li className="bg-success"></li>
+        <li className="bg-dark"></li>
+        <li className="bg-white"></li>
+        <li className="bg-brown"></li>
        
       </ul>
     </div>

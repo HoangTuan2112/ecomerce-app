@@ -395,8 +395,9 @@ footer .input-group-text {
 .colors li {
   height: 20px;
   width: 20px;
-  background-color: red;
+  background-color: brown;
   border-radius: 50%;
+  border: 1px solid var(--color-131921);
 }
 .random-products h5 {
   font-size: 14px;
