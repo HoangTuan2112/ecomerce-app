@@ -2,7 +2,7 @@ import React from "react";
 import ReactStars from "react-rating-stars-component";
 import { Link, useLocation } from "react-router-dom";
 const ProductCard = (props) => {
-  const { grid ,img,img2,title,price,rating,brand,description} = props;
+  const { grid ,img,img2,title,price,rating,brand,description,quantity} = props;
   let location = useLocation();
 
   return (
@@ -55,6 +55,7 @@ const ProductCard = (props) => {
               size={24}
               activeColor="#ffd700"
             />
+            <p className="price">({quantity} sold)</p>
             {/* <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}>
               This sleek and stylish smartwatch is the perfect blend of
               technology and fashion. With its [mention key features, e.g.,
@@ -67,6 +68,7 @@ const ProductCard = (props) => {
             </p>
       
             {/* <p className="price">$100</p> */}
+
             <p className="price">${price}</p>
           </div>
           <div className="action-bar position-absolute">

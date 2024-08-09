@@ -3,7 +3,7 @@
     "name": "Luminor Base Logo",
     "checked": false,
     "brand": "Panerai",
-    "tittle": " Luminor Base Logo PAM01087",
+    "tittle": "Luminor Base Logo PAM01087",
     "description": "Panerai Watch Luminor Base Logo PAM01087. Panerai watches not only stand as a silent witness to the passage of time but as examples of the indelible mark the Italian manufacturer continues to leave on the watchmaking industry. From its humble beginnings, the Luminor watch collection represented an epoch defining era, where the iconic design emerged with a crown protecting bridge and cushion shaped case. This Panerai Luminor Base Logo watch reference PAM01087 is yet another example of the brand’s expert workmanship. The model is crafted from stainless steel and features a white dial with silver accented, luminous coated Arabic numerals at 12, 3, 6 and 9 o'clock. As with all Base Logo watches from the Panerai Luminor series, this watch presents the time in its classic pared back way.",
     "price": "5600",
     "img": "https://res.cloudinary.com/dv9tvgnsz/image/upload/v1723084939/dyfynyzrkchderwqrg0x.avif",
@@ -13,7 +13,8 @@
     "size": "S,M,L,XL",
     "color": "green",
     "quantity": "999",
-    "id": "1"
+    "id": "1",
+    "outOfStock": false
   },
   {
     "name": "Luminor Quaranta",
@@ -29,7 +30,8 @@
     "size": "S,M,L,XL",
     "color": "black",
     "quantity": "20",
-    "id": "2"
+    "id": "2",
+    "outOfStock": false
   },
   {
     "name": "name 1",
@@ -40,12 +42,13 @@
     "price": "5400",
     "img": "https://www.jurawatches.co.uk/cdn/shop/files/PaneraiWatchRadiomirOfficinePAM013821_78x.png?v=1715183377",
     "img2": "https://www.jurawatches.co.uk/cdn/shop/files/PaneraiWatchRadiomirOfficinePAM013822.png?v=1715183376",
-    "rating": 69,
+    "rating": 5,
     "category": "watch",
     "size": "L,XL",
     "color": "black",
     "quantity": "200",
-    "id": "3"
+    "id": "3",
+    "outOfStock": false
   },
   {
     "name": "name 1",
@@ -61,7 +64,8 @@
     "size": "L,XL",
     "color": "black",
     "quantity": "200",
-    "id": "4"
+    "id": "4",
+    "outOfStock": false
   },
   {
     "name": "name 1",
@@ -77,7 +81,8 @@
     "size": "S",
     "color": "white",
     "quantity": "30",
-    "id": "5"
+    "id": "5",
+    "outOfStock": false
   },
   {
     "name": "name 1",
@@ -88,12 +93,13 @@
     "price": "1600",
     "img": "https://www.jurawatches.co.uk/cdn/shop/files/L5.200.4.75.2_SOLpub_A3_78x.jpg?v=1695215125",
     "img2": "https://www.jurawatches.co.uk/cdn/shop/files/L5.200.4.75.2_BACK_78x.jpg?v=1695215125",
-    "rating": 4.5,
+    "rating": 5,
     "category": "category 1",
     "size": "S,M",
-    "color": "brown",
+    "color": "black",
     "quantity": "2",
-    "id": "6"
+    "id": "6",
+    "outOfStock": false
   },
   {
     "name": "name 1",
@@ -109,7 +115,8 @@
     "size": "S",
     "color": "white",
     "quantity": "22",
-    "id": "7"
+    "id": "7",
+    "outOfStock": false
   },
   {
     "name": "name 1",
@@ -120,12 +127,13 @@
     "price": "9200",
     "img": "https://www.jurawatches.co.uk/cdn/shop/files/chpd-014-chopard-watch-mille-miglia-168619-3003_78x.jpg?v=1691650915",
     "img2": "https://www.jurawatches.co.uk/cdn/shop/files/chpd-014-chopard-watch-mille-miglia-168619-3003_2_78x.jpg?v=1691650915",
-    "rating": 48,
+    "rating": 3,
     "category": "category 1",
     "size": "M,L",
     "color": "brown",
     "quantity": "8",
-    "id": "8"
+    "id": "8",
+    "outOfStock": false
   },
   {
     "name": "name 1",
@@ -141,7 +149,8 @@
     "size": "S",
     "color": "black",
     "quantity": "16",
-    "id": "9"
+    "id": "9",
+    "outOfStock": false
   },
   {
     "name": "name 2",
@@ -157,7 +166,8 @@
     "size": "M",
     "color": "black",
     "quantity": "222",
-    "id": "10"
+    "id": "10",
+    "outOfStock": false
   },
   {
     "name": "name 3",
@@ -168,12 +178,13 @@
     "price": "2190",
     "img": "https://www.jurawatches.co.uk/cdn/shop/files/gcc-157-gucci-watch-g-timeless-40mm-mens-ya126390_78x.jpg?v=1709195496",
     "img2": "https://www.jurawatches.co.uk/cdn/shop/files/gcc-157-gucci-watch-g-timeless-40mm-mens-ya126390_2_78x.jpg?v=1709195496",
-    "rating": 83,
+    "rating": 4,
     "category": "category 3",
     "size": "L,XL",
     "color": "white",
     "quantity": "9",
-    "id": "11"
+    "id": "11",
+    "outOfStock": false
   },
   {
     "name": "name 4",
@@ -189,7 +200,8 @@
     "size": "M",
     "color": "green",
     "quantity": "8",
-    "id": "12"
+    "id": "12",
+    "outOfStock": false
   },
   {
     "name": "name 5",
@@ -200,12 +212,13 @@
     "price": "640",
     "img": "https://www.jurawatches.co.uk/cdn/shop/files/1001_78x.png?v=1715832139",
     "img2": "https://www.jurawatches.co.uk/cdn/shop/files/1004_78x.png?v=1715832139",
-    "rating": 47,
+    "rating": 6,
     "category": "category 5",
     "size": "M",
     "color": "black",
     "quantity": "199",
-    "id": "13"
+    "id": "13",
+    "outOfStock": false
   },
   {
     "name": "name 6",
@@ -216,12 +229,13 @@
     "price": "780",
     "img": "https://www.jurawatches.co.uk/cdn/shop/products/AWC_AN_4_0001_1975_78x.png?v=1676895140",
     "img2": "https://www.jurawatches.co.uk/cdn/shop/products/AWC_AN_4_0001_1975_78x.png?v=1676895140",
-    "rating": 13,
+    "rating": 5,
     "category": "category 6",
     "size": "L",
     "color": "white",
     "quantity": "22",
-    "id": "14"
+    "id": "14",
+    "outOfStock": false
   },
   {
     "name": "ArtyA",
@@ -232,17 +246,18 @@
     "price": "750",
     "img": "https://www.jurawatches.co.uk/cdn/shop/products/AlstaWatchNautoscaphVPorcelanaAWC_AN_15_001_100_78x.png?v=1676894957",
     "img2": "https://www.jurawatches.co.uk/cdn/shop/products/Up-North-Jan2303308-1024x1024_78x.png?v=1679651061",
-    "rating": 71,
+    "rating": 4,
     "category": "category 7",
     "size": "M,L",
     "color": "red",
     "quantity": "88",
-    "id": "15"
+    "id": "15",
+    "outOfStock": false
   },
   {
     "name": "name 8",
     "checked": false,
-    "brand": "TUDOR ",
+    "brand": "TUDOR",
     "tittle": "Black Bay 41",
     "description": "TUDOR Watch Black Bay 41mm M79210CNU-0001. Best known for its reputation in crafting luxury watches that equal the quality of its sibling brand Rolex, TUDOR is a company that is backed by provenance and fortified by traditional craftsmanship.",
     "price": "4890",
@@ -253,12 +268,13 @@
     "size": "M",
     "color": "black",
     "quantity": "22",
-    "id": "16"
+    "id": "16",
+    "outOfStock": false
   },
   {
     "name": "name 9",
     "checked": false,
-    "brand": "TUDOR ",
+    "brand": "TUDOR",
     "tittle": "Black Bay Bronze",
     "description": "The Black Bay Bronze watch from TUDOR personifies the concept of a retro edge with modern technology. Its design celebrates TUDOR’s naval heritage, particularly this model, with its legible slate grey dial, primed for legibility and clarity. This TUDOR Black Bay Bronze watch reference M79250BA-0001 measures a 43mm and features a bronze case, complete with a bronze PVD treated stainless steel caseback. The choice of material for the rear side of the case eradicates the risk of tarnishing the skin and protects the Calibre MT5601 as it performs, guaranteeing an impressive 70 hour power reserve. This men’s TUDOR Black Bay Bronze watch also features a bronze screw down winding crown that helps the case uphold its water resistant capability of 200 meters and features a unidirectional rotating bezel for measuring elapsed time.",
     "price": "4700",
@@ -269,28 +285,30 @@
     "size": "S,M,L,XL",
     "color": "black",
     "quantity": "5",
-    "id": "17"
+    "id": "17",
+    "outOfStock": false
   },
   {
     "name": "name 10",
     "checked": false,
-    "brand": "TUDOR ",
+    "brand": "TUDOR",
     "tittle": "Black Bay 41 S&G",
     "description": "TUDOR Watch Black Bay 41 S&G M79733N-0004. Sixty years of TUDOR diving history distilled into one truly iconic watch. The Black Bay is powered by a mechanical movement manufactured by TUDOR.",
     "price": "5700",
     "img": "https://www.jurawatches.co.uk/cdn/shop/files/TUDORWatchBlackBay41S_GM79733N-00041copy_78x.jpg?v=1695040922",
     "img2": "https://www.jurawatches.co.uk/cdn/shop/files/TUDORWatchBlackBay41S_GM79733N-00041copy_78x.jpg?v=1695040922",
-    "rating": 20,
+    "rating": 2,
     "category": "category 10",
     "size": "M,L",
     "color": "white",
     "quantity": "5",
-    "id": "18"
+    "id": "18",
+    "outOfStock": false
   },
   {
     "name": "name 11",
     "checked": false,
-    "brand": "Garmin ",
+    "brand": "Garmin",
     "tittle": "Epix Pro Gen 2 47mm Sapphire Titanium",
     "description": "Garmin Watch Epix Pro Gen 2 47mm Sapphire Titanium Whitestone 010-02803-21. You're an athlete who doesn't make compromises. epix Pro - Sapphire Edition is the ultimate multisport GPS smartwatch designed to perform all day, every day.",
     "price": "800",
@@ -301,7 +319,8 @@
     "size": "M",
     "color": "white",
     "quantity": "11",
-    "id": "19"
+    "id": "19",
+    "outOfStock": false
   },
   {
     "name": "name 12",
@@ -317,7 +336,8 @@
     "size": "XL",
     "color": "black",
     "quantity": "22",
-    "id": "20"
+    "id": "20",
+    "outOfStock": false
   },
   {
     "name": "name 12",
@@ -333,7 +353,8 @@
     "size": "M,L,XL",
     "color": "black",
     "quantity": "22",
-    "id": "21"
+    "id": "21",
+    "outOfStock": false
   },
   {
     "name": "name 12",
@@ -349,7 +370,8 @@
     "size": "M,L",
     "color": "white",
     "quantity": "15",
-    "id": "22"
+    "id": "22",
+    "outOfStock": false
   },
   {
     "name": "name 12",
@@ -365,7 +387,8 @@
     "size": "S",
     "color": "brown",
     "quantity": "14",
-    "id": "23"
+    "id": "23",
+    "outOfStock": false
   },
   {
     "name": "name 12",
@@ -381,7 +404,8 @@
     "size": "S,M,L",
     "color": "black",
     "quantity": "99",
-    "id": "24"
+    "id": "24",
+    "outOfStock": false
   },
   {
     "name": "name 12",

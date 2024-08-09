@@ -37,78 +37,1089 @@ const OurStore = () => {
   const randomProducts = products
     .sort(() => Math.random() - Math.random())
     .slice(0, 2);
-  const rating1 = products[0]?.rating.toString();
-  // Panerai
-  // Longines
-  // Chopard
-  // Gucci
-  // Alsta
-  // TUDOR
-  // Garmin Epix Pro
-  // RADO
 
-  const filterProduct = (filter) => {
+  const [stock, setStock] = React.useState("inStock");
+  const [size, setSize] = React.useState("");
+
+  const listSizeS = products.filter((product) => product.size.includes("S"));
+  const listSizeM = products.filter((product) => product.size.includes("M"));
+  const listSizeL = products.filter((product) => product.size.includes("L"));
+  const listSizeXL = products.filter((product) => product.size.includes("XL"));
+  const filterProduct = (filter, stock, color, size) => {
     let listProduct = [];
-    if (filter === "best-selling") {
-      // quantity la so luong san pham ban ra
-      listProduct = products.sort((a, b) => b.quantity - a.quantity);
-      return listProduct;
-    } else if (filter === "title-ascending") {
-      listProduct = products.sort((a, b) => a.tittle.localeCompare(b.tittle));
-      return listProduct;
-    } else if (filter === "title-descending") {
-      listProduct = products.sort((a, b) => b.tittle.localeCompare(a.tittle));
-      return listProduct;
-    } else if (filter === "price-ascending") {
-      listProduct = products.sort((a, b) => a.price - b.price);
-      return listProduct;
-    } else if (filter === "price-descending") {
-      listProduct = products.sort((a, b) => b.price - a.price);
-      return listProduct;
-    } else if (filter === "manual") {
-      listProduct = products;
-      return listProduct;
-    }else if(filter==="Panerai"){
-      listProduct = products.filter((product) => product.brand === "Panerai");
-      return listProduct;
-    }else if(filter==="Longines"){
-      listProduct = products.filter((product) => product.brand === "Longines");
-      return listProduct;
-    }else if(filter==="Chopard"){
-      listProduct = products.filter((product) => product.brand === "Chopard");
-      return listProduct;
-    }else if(filter==="Gucci"){
-      listProduct = products.filter((product) => product.brand === "Gucci");
-      return listProduct;
-    }else if(filter==="Alasta"){
-      listProduct = products.filter((product) => product.brand === "Alasta");
-      return listProduct;
-    }
-    else if(filter==="TUDOR"){
-      listProduct = products.filter((product) => product.brand === "TUDOR");
-      return listProduct;
-    }
-    else if(filter==="Garmin Epix Pro"){
-      listProduct = products.filter((product) => product.brand === "Garmin");
-      return listProduct;
-    }
-    else if(filter==="RADO"){
-      listProduct = products.filter((product) => product.brand === "Rado");
-      return listProduct;
-    }
+    // if (filter === "best-selling") {
+    //   // quantity la so luong san pham ban ra
+    //   listProduct = products.sort((a, b) => b.quantity - a.quantity);
+    //   return listProduct;
+    // } else if (filter === "title-ascending") {
+    //   listProduct = products.sort((a, b) => a.tittle.localeCompare(b.tittle));
+    //   return listProduct;
+    // } else if (filter === "title-descending") {
+    //   listProduct = products.sort((a, b) => b.tittle.localeCompare(a.tittle));
+    //   return listProduct;
+    // } else if (filter === "price-ascending") {
+    //   listProduct = products.sort((a, b) => a.price - b.price);
+    //   return listProduct;
+    // } else if (filter === "price-descending") {
+    //   listProduct = products.sort((a, b) => b.price - a.price);
+    //   return listProduct;
+    // } else
+    if (stock === "inStock") {
+      listProduct = products.filter((product) => product.outOfStock === false);
 
+      if (filter === "Panerai") {
+        if (color === "red") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Panerai" &&
+              product.color === "red"
+          );
+          return listProduct;
+        }
+        if (color === "red" && size === "M") {
+          listProduct = listSizeM.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Panerai" &&
+              product.color === "red"
+          );
+          return listProduct;
+        }
+        if (color === "red") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Panerai" &&
+              product.color === "red"
+          );
+          return listProduct;
+        }
 
+        if (color === "green") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Panerai" &&
+              product.color === "green"
+          );
+          return listProduct;
+        }
+        if (color === "black") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Panerai" &&
+              product.color === "black"
+          );
+          return listProduct;
+        }
+        if (color === "white") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Panerai" &&
+              product.color === "white"
+          );
+          return listProduct;
+        }
+        if (color === "brown") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Panerai" &&
+              product.color === "brown"
+          );
+          return listProduct;
+        }
+        listProduct = products.filter(
+          (product) =>
+            product.outOfStock === false && product.brand === "Panerai"
+        );
+        return listProduct;
+      }
+
+      if (filter === "Longines") {
+        if (color === "red") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Longines" &&
+              product.color === "red"
+          );
+          return listProduct;
+        }
+        if (color === "green") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Longines" &&
+              product.color === "green"
+          );
+          return listProduct;
+        }
+        if (color === "black") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Longines" &&
+              product.color === "black"
+          );
+          return listProduct;
+        }
+        if (color === "white") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Longines" &&
+              product.color === "white"
+          );
+          return listProduct;
+        }
+        if (color === "Longines") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Panerai" &&
+              product.color === "brown"
+          );
+          return listProduct;
+        }
+        listProduct = products.filter(
+          (product) =>
+            product.outOfStock === false && product.brand === "Longines"
+        );
+        return listProduct;
+      }
+      if (filter === "Chopard") {
+        if (color === "red") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Chopard" &&
+              product.color === "red"
+          );
+          return listProduct;
+        }
+        if (color === "green") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Chopard" &&
+              product.color === "green"
+          );
+          return listProduct;
+        }
+        if (color === "black") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Chopard" &&
+              product.color === "black"
+          );
+          return listProduct;
+        }
+        if (color === "white") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Chopard" &&
+              product.color === "white"
+          );
+          return listProduct;
+        }
+        if (color === "brown") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Chopard" &&
+              product.color === "brown"
+          );
+          return listProduct;
+        }
+
+        listProduct = products.filter(
+          (product) =>
+            product.outOfStock === false && product.brand === "Chopard"
+        );
+        return listProduct;
+      }
+      if (filter === "Gucci") {
+        if (color === "red") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Gucci" &&
+              product.color === "red"
+          );
+          return listProduct;
+        }
+        if (color === "green") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Gucci" &&
+              product.color === "green"
+          );
+          return listProduct;
+        }
+        if (color === "black") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Gucci" &&
+              product.color === "black"
+          );
+          return listProduct;
+        }
+        if (color === "white") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Gucci" &&
+              product.color === "white"
+          );
+          return listProduct;
+        }
+        if (color === "brown") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Gucci" &&
+              product.color === "brown"
+          );
+          return listProduct;
+        }
+
+        listProduct = products.filter(
+          (product) => product.outOfStock === false && product.brand === "Gucci"
+        );
+        return listProduct;
+      }
+      if (filter === "Alasta") {
+        if (color === "red") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Alasta" &&
+              product.color === "red"
+          );
+          return listProduct;
+        }
+        if (color === "green") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Alasta" &&
+              product.color === "green"
+          );
+          return listProduct;
+        }
+        if (color === "black") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Alasta" &&
+              product.color === "black"
+          );
+          return listProduct;
+        }
+        if (color === "white") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Alasta" &&
+              product.color === "white"
+          );
+          return listProduct;
+        }
+        if (color === "brown") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Alasta" &&
+              product.color === "brown"
+          );
+          return listProduct;
+        }
+
+        listProduct = products.filter(
+          (product) =>
+            product.outOfStock === false && product.brand === "Alasta"
+        );
+        return listProduct;
+      }
+      if (filter === "TUDOR") {
+        if (color === "red") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "TUDOR" &&
+              product.color === "red"
+          );
+          return listProduct;
+        }
+        if (color === "green") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "TUDOR" &&
+              product.color === "green"
+          );
+          return listProduct;
+        }
+        if (color === "black") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "TUDOR" &&
+              product.color === "black"
+          );
+          return listProduct;
+        }
+        if (color === "white") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "TUDOR" &&
+              product.color === "white"
+          );
+          return listProduct;
+        }
+        if (color === "brown") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "TUDOR" &&
+              product.color === "brown"
+          );
+          return listProduct;
+        }
+
+        listProduct = products.filter(
+          (product) => product.outOfStock === false && product.brand === "TUDOR"
+        );
+        return listProduct;
+      }
+      if (filter === "Garmin Epix Pro") {
+        if (color === "red") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Garmin" &&
+              product.color === "red"
+          );
+          return listProduct;
+        }
+        if (color === "green") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Garmin" &&
+              product.color === "green"
+          );
+          return listProduct;
+        }
+        if (color === "black") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Garmin" &&
+              product.color === "black"
+          );
+          return listProduct;
+        }
+        if (color === "white") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Garmin" &&
+              product.color === "white"
+          );
+          return listProduct;
+        }
+        if (color === "brown") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Garmin" &&
+              product.color === "brown"
+          );
+          return listProduct;
+        }
+
+        listProduct = products.filter(
+          (product) =>
+            product.outOfStock === false && product.brand === "Garmin"
+        );
+        return listProduct;
+      }
+      if (filter === "RADO") {
+        if (color === "red") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Rado" &&
+              product.color === "red"
+          );
+          return listProduct;
+        }
+        if (color === "green") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Rado" &&
+              product.color === "green"
+          );
+          return listProduct;
+        }
+        if (color === "black") {
+          listProduct = listSizeS.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Rado" &&
+              product.color === "black"
+          );
+          return listProduct;
+        }
+        if (color === "white") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Rado" &&
+              product.color === "white"
+          );
+          return listProduct;
+        }
+        if (color === "brown") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false &&
+              product.brand === "Rado" &&
+              product.color === "brown"
+          );
+          return listProduct;
+        }
+
+        listProduct = products.filter(
+          (product) => product.outOfStock === false && product.brand === "Rado"
+        );
+        return listProduct;
+      }
+      if (filter === "manual") {
+        listProduct = products.filter(
+          (product) => product.outOfStock === false
+        );
+        if (color === "red") {
+          listProduct = products.filter(
+            (product) => product.outOfStock === false && product.color === "red"
+          );
+          return listProduct;
+        }
+        if (color === "green") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false && product.color === "green"
+          );
+          return listProduct;
+        }
+        if (color === "black") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false && product.color === "black"
+          );
+          return listProduct;
+        }
+        if (color === "white") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false && product.color === "white"
+          );
+          return listProduct;
+        }
+        if (color === "brown") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === false && product.color === "brown"
+          );
+          return listProduct;
+        }
+      }
+      return listProduct;
+    } else if (stock === "outOfStock") {
+      listProduct = products.filter((product) => product.outOfStock === true);
+
+      // if (filter === "Panerai") {
+      //   listProduct = products.filter(
+      //     (product) =>
+      //       product.outOfStock === true && product.brand === "Panerai"
+      //   );
+      //   return listProduct;
+      // }
+      // if (filter === "Longines") {
+      //   listProduct = products.filter(
+      //     (product) =>
+      //       product.outOfStock === true && product.brand === "Longines"
+      //   );
+      //   return listProduct;
+      // }
+      // if (filter === "Chopard") {
+      //   listProduct = products.filter(
+      //     (product) =>
+      //       product.outOfStock === true && product.brand === "Chopard"
+      //   );
+      //   return listProduct;
+      // }
+      // if (filter === "Gucci") {
+      //   listProduct = products.filter(
+      //     (product) => product.outOfStock === true && product.brand === "Gucci"
+      //   );
+      //   return listProduct;
+      // }
+      // if (filter === "Alasta") {
+      //   listProduct = products.filter(
+      //     (product) => product.outOfStock === true && product.brand === "Alasta"
+      //   );
+      //   return listProduct;
+      // }
+      // if (filter === "TUDOR") {
+      //   listProduct = products.filter(
+      //     (product) => product.outOfStock === true && product.brand === "TUDOR"
+      //   );
+      //   return listProduct;
+      // }
+      // if (filter === "Garmin Epix Pro") {
+      //   listProduct = products.filter(
+      //     (product) => product.outOfStock === true && product.brand === "Garmin"
+      //   );
+      //   return listProduct;
+      // }
+      // if (filter === "RADO") {
+      //   listProduct = products.filter(
+      //     (product) => product.outOfStock === true && product.brand === "Rado"
+      //   );
+      //   return listProduct;
+      // }
+
+      if (filter === "Panerai") {
+        if (color === "red") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Panerai" &&
+              product.color === "red"
+          );
+          return listProduct;
+        }
+        if (color === "green") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Panerai" &&
+              product.color === "green"
+          );
+          return listProduct;
+        }
+        if (color === "black") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Panerai" &&
+              product.color === "black"
+          );
+          return listProduct;
+        }
+        if (color === "white") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Panerai" &&
+              product.color === "white"
+          );
+          return listProduct;
+        }
+        if (color === "brown") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Panerai" &&
+              product.color === "brown"
+          );
+          return listProduct;
+        }
+        listProduct = products.filter(
+          (product) =>
+            product.outOfStock === true && product.brand === "Panerai"
+        );
+        return listProduct;
+      }
+
+      if (filter === "Longines") {
+        if (color === "red") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Longines" &&
+              product.color === "red"
+          );
+          return listProduct;
+        }
+        if (color === "green") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Longines" &&
+              product.color === "green"
+          );
+          return listProduct;
+        }
+        if (color === "black") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Longines" &&
+              product.color === "black"
+          );
+          return listProduct;
+        }
+        if (color === "white") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Longines" &&
+              product.color === "white"
+          );
+          return listProduct;
+        }
+        if (color === "Longines") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Panerai" &&
+              product.color === "brown"
+          );
+          return listProduct;
+        }
+        listProduct = products.filter(
+          (product) =>
+            product.outOfStock === true && product.brand === "Longines"
+        );
+        return listProduct;
+      }
+      if (filter === "Chopard") {
+        if (color === "red") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Chopard" &&
+              product.color === "red"
+          );
+          return listProduct;
+        }
+        if (color === "green") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Chopard" &&
+              product.color === "green"
+          );
+          return listProduct;
+        }
+        if (color === "black") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Chopard" &&
+              product.color === "black"
+          );
+          return listProduct;
+        }
+        if (color === "white") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Chopard" &&
+              product.color === "white"
+          );
+          return listProduct;
+        }
+        if (color === "brown") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Chopard" &&
+              product.color === "brown"
+          );
+          return listProduct;
+        }
+
+        listProduct = products.filter(
+          (product) =>
+            product.outOfStock === true && product.brand === "Chopard"
+        );
+        return listProduct;
+      }
+      if (filter === "Gucci") {
+        if (color === "red") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Gucci" &&
+              product.color === "red"
+          );
+          return listProduct;
+        }
+        if (color === "green") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Gucci" &&
+              product.color === "green"
+          );
+          return listProduct;
+        }
+        if (color === "black") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Gucci" &&
+              product.color === "black"
+          );
+          return listProduct;
+        }
+        if (color === "white") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Gucci" &&
+              product.color === "white"
+          );
+          return listProduct;
+        }
+        if (color === "brown") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Gucci" &&
+              product.color === "brown"
+          );
+          return listProduct;
+        }
+
+        listProduct = products.filter(
+          (product) => product.outOfStock === true && product.brand === "Gucci"
+        );
+        return listProduct;
+      }
+      if (filter === "Alasta") {
+        if (color === "red") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Alasta" &&
+              product.color === "red"
+          );
+          return listProduct;
+        }
+        if (color === "green") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Alasta" &&
+              product.color === "green"
+          );
+          return listProduct;
+        }
+        if (color === "black") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Alasta" &&
+              product.color === "black"
+          );
+          return listProduct;
+        }
+        if (color === "white") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Alasta" &&
+              product.color === "white"
+          );
+          return listProduct;
+        }
+        if (color === "brown") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Alasta" &&
+              product.color === "brown"
+          );
+          return listProduct;
+        }
+
+        listProduct = products.filter(
+          (product) => product.outOfStock === true && product.brand === "Alasta"
+        );
+        return listProduct;
+      }
+      if (filter === "TUDOR") {
+        if (color === "red") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "TUDOR" &&
+              product.color === "red"
+          );
+          return listProduct;
+        }
+        if (color === "green") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "TUDOR" &&
+              product.color === "green"
+          );
+          return listProduct;
+        }
+        if (color === "black") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "TUDOR" &&
+              product.color === "black"
+          );
+          return listProduct;
+        }
+        if (color === "white") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "TUDOR" &&
+              product.color === "white"
+          );
+          return listProduct;
+        }
+        if (color === "brown") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "TUDOR" &&
+              product.color === "brown"
+          );
+          return listProduct;
+        }
+
+        listProduct = products.filter(
+          (product) => product.outOfStock === true && product.brand === "TUDOR"
+        );
+        return listProduct;
+      }
+      if (filter === "Garmin Epix Pro") {
+        if (color === "red") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Garmin" &&
+              product.color === "red"
+          );
+          return listProduct;
+        }
+        if (color === "green") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Garmin" &&
+              product.color === "green"
+          );
+          return listProduct;
+        }
+        if (color === "black") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Garmin" &&
+              product.color === "black"
+          );
+          return listProduct;
+        }
+        if (color === "white") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Garmin" &&
+              product.color === "white"
+          );
+          return listProduct;
+        }
+        if (color === "brown") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Garmin" &&
+              product.color === "brown"
+          );
+          return listProduct;
+        }
+
+        listProduct = products.filter(
+          (product) => product.outOfStock === true && product.brand === "Garmin"
+        );
+        return listProduct;
+      }
+      if (filter === "RADO") {
+        if (color === "red") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Rado" &&
+              product.color === "red"
+          );
+          return listProduct;
+        }
+        if (color === "green") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Rado" &&
+              product.color === "green"
+          );
+          return listProduct;
+        }
+        if (color === "black") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Rado" &&
+              product.color === "black"
+          );
+          return listProduct;
+        }
+        if (color === "white") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Rado" &&
+              product.color === "white"
+          );
+          return listProduct;
+        }
+        if (color === "brown") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true &&
+              product.brand === "Rado" &&
+              product.color === "brown"
+          );
+          return listProduct;
+        }
+
+        listProduct = products.filter(
+          (product) => product.outOfStock === true && product.brand === "Rado"
+        );
+        return listProduct;
+      }
+      // if (filter === "manual") {
+      //   listProduct = products.filter(
+      //     (product) => product.outOfStock === true
+      //   );
+      //   if (color === "red") {
+      //     listProduct = products.filter(
+      //       (product) => product.outOfStock === true && product.color === "red"
+      //     );
+      //     return listProduct;
+      //   }
+      //   if (color === "green") {
+      //     listProduct = products.filter(
+      //       (product) =>
+      //         product.outOfStock === true && product.color === "green"
+      //     );
+      //     return listProduct;
+      //   }
+      //   if (color === "black") {
+      //     listProduct = products.filter(
+      //       (product) =>
+      //         product.outOfStock === true && product.color === "black"
+      //     );
+      //     return listProduct;
+      //   }
+      //   if (color === "white") {
+      //     listProduct = products.filter(
+      //       (product) =>
+      //         product.outOfStock === true && product.color === "white"
+      //     );
+      //     return listProduct;
+      //   }
+      //   if (color === "brown") {
+      //     listProduct = products.filter(
+      //       (product) =>
+      //         product.outOfStock === true && product.color === "brown"
+      //     );
+      //     return listProduct;
+      //   }
+      // }
+
+      if (filter === "manual") {
+        listProduct = products.filter((product) => product.outOfStock === true);
+        if (color === "red") {
+          listProduct = products.filter(
+            (product) => product.outOfStock === true && product.color === "red"
+          );
+          return listProduct;
+        }
+        if (color === "green") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true && product.color === "green"
+          );
+          return listProduct;
+        }
+        if (color === "black") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true && product.color === "black"
+          );
+          return listProduct;
+        }
+        if (color === "white") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true && product.color === "white"
+          );
+          return listProduct;
+        }
+        if (color === "brown") {
+          listProduct = products.filter(
+            (product) =>
+              product.outOfStock === true && product.color === "brown"
+          );
+          return listProduct;
+        }
+        return listProduct;
+      }
+    }
   };
   const handleFilterChange = (event) => {
     setFilter(event.target.value);
   };
-  console.log(filterProduct("best-selling"));
+
+  // handle change stock radio
+  const handleChange = (ev) => {
+    console.log(ev.target.value);
+
+    setStock(ev.target.value);
+  };
+
+  const [color, setColor] = React.useState("");
+  const [priceFrom, setPriceFrom] = React.useState("");
+  const [priceTo, setPriceTo] = React.useState("");
   useEffect(() => {
     axios.get(url).then((res) => {
       console.log(res.data);
       setProducts(res.data);
     });
   }, []);
+
   const [filter, setFilter] = React.useState("manual");
   return (
     <div>
@@ -122,14 +1133,17 @@ const OurStore = () => {
                 <h3 className="filter-tittle">Shop By Brand</h3>
                 <div>
                   <ul className="ps-0">
-                    <li onClick={()=>setFilter("Panerai")}>Panerai</li>
-                    <li onClick={()=>setFilter("Longines")}>Longines</li>
-                    <li onClick={()=>setFilter("Chopard")}>Chopard</li>
-                    <li onClick={()=>setFilter("Gucci")}>Gucci</li>
-                    <li onClick={()=>setFilter("Alasta")}>Alasta</li>
-                    <li onClick={()=>setFilter("TUDOR")}>TUDOR </li>
-                    <li onClick={()=>setFilter("Garmin Epix Pro")}>Garmin Epix Pro</li>
-                    <li onClick={()=>setFilter("RADO")}>RADO</li>
+                    <li onClick={() => setFilter("Panerai")}>Panerai</li>
+                    <li onClick={() => setFilter("Longines")}>Longines</li>
+                    <li onClick={() => setFilter("Chopard")}>Chopard</li>
+                    <li onClick={() => setFilter("Gucci")}>Gucci</li>
+                    <li onClick={() => setFilter("Alasta")}>Alasta</li>
+                    <li onClick={() => setFilter("TUDOR")}>TUDOR </li>
+                    <li onClick={() => setFilter("Garmin Epix Pro")}>
+                      Garmin Epix Pro
+                    </li>
+                    <li onClick={() => setFilter("RADO")}>RADO</li>
+                    <li onClick={() => setFilter("manual")}>All</li>
                   </ul>
                 </div>
               </div>
@@ -141,25 +1155,34 @@ const OurStore = () => {
                     <div className="form-check">
                       <input
                         className="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id=""
+                        type="radio"
+                        name="stockOption"
+                        value="inStock"
+                        id="inStock"
+                        onChange={handleChange}
                       />
-                      <label className="form-check-label" htmlFor="">
+                      <label className="form-check-label" htmlFor="inStock">
                         In stock ({countStock})
                       </label>
                     </div>
                     <div className="form-check">
                       <input
                         className="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id=""
+                        type="radio"
+                        name="stockOption"
+                        value="outOfStock"
+                        id="outOfStock"
+                        onChange={handleChange}
                       />
-                      <label className="form-check-label" htmlFor="">
+                      <label className="form-check-label" htmlFor="outOfStock">
                         Out of stock ({countOutStock})
                       </label>
                     </div>
+                  </div>
+
+                  <h5 className="sub-tittle">Colors</h5>
+                  <div>
+                    <Color color={color} setColor={setColor} />
                   </div>
                   <h5 className="sub-tittle">Price</h5>
                   <div className="d-flex align-items-center gap-10">
@@ -191,11 +1214,11 @@ const OurStore = () => {
                         placeholder="to"
                       />
                     </div>
+                   
                   </div>
-                  <h5 className="sub-tittle">Colors</h5>
-                  <div>
-                    <Color />
-                  </div>
+                  <div className="">
+                        <button className="button">Filter for price</button>
+                    </div>
                   <h5 className="sub-tittle">Size</h5>
                   <div>
                     <div className="form-check">
@@ -242,6 +1265,20 @@ const OurStore = () => {
                         XL ({countSizeXL})
                       </label>
                     </div>
+                    <div className="form-check">
+                      <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="size"
+                      />
+                      <label className="form-check-label" htmlFor="size">
+                        All ({countStock})
+                      </label>
+                    </div>
+                    <div className="mt-3">
+                        <button className="button">Filter for size</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -286,6 +1323,7 @@ const OurStore = () => {
                         size={24}
                         activeColor="#ffd700"
                       />
+
                       <b className="price">${randomProducts[0]?.price}</b>
                     </div>
                   </div>
@@ -306,12 +1344,10 @@ const OurStore = () => {
                       value={filter}
                       onChange={handleFilterChange}
                     >
-                      <option value="manual" >
-                        Featured
-                      </option>
+                      <option value="manual">Featured</option>
                       <option
                         value="best-selling"
-
+                        selected={filter === "best-selling" ? true : false}
                         // onSelect={() => {setFilter("best-selling");console.log(filterProduct(filter))}}
                       >
                         Best selling
@@ -373,22 +1409,21 @@ const OurStore = () => {
               </div>
               <div className="product-list pb-5">
                 <div className="d-flex gap-10 flex-wrap">
-                  {filterProduct(filter).map((product) => {
-                    if (product.outOfStock !== true) {
-                      return (
-                        <ProductCard
-                          key={product.id}
-                          img={product.img}
-                          title={product.tittle}
-                          price={product.price}
-                          rating={product.rating}
-                          img2={product.img2}
-                          brand={product.brand}
-                          description={product.description}
-                          grid={grid}
-                        />
-                      );
-                    }
+                  {filterProduct(filter, stock, color, size).map((product) => {
+                    return (
+                      <ProductCard
+                        key={product.id}
+                        img={product.img}
+                        title={product.tittle}
+                        price={product.price}
+                        rating={product.rating}
+                        img2={product.img2}
+                        brand={product.brand}
+                        description={product.description}
+                        quantity={product.quantity}
+                        grid={grid}
+                      />
+                    );
                   })}
                 </div>
               </div>
