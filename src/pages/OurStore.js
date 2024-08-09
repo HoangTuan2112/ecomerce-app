@@ -33,10 +33,8 @@ const OurStore = () => {
   const countSizeXL = products.filter((product) =>
     product.size.includes("XL")
   ).length;
-
-  const randomProducts = products
-    .sort(() => Math.random() - Math.random())
-    .slice(0, 2);
+  const randomNumber = Math.floor(Math.random() * products.length);
+  const randomProducts = [products[randomNumber], products[randomNumber + 1]];
 
   const [stock, setStock] = React.useState("inStock");
   const [size, setSize] = React.useState("");
@@ -45,28 +43,30 @@ const OurStore = () => {
   const listSizeM = products.filter((product) => product.size.includes("M"));
   const listSizeL = products.filter((product) => product.size.includes("L"));
   const listSizeXL = products.filter((product) => product.size.includes("XL"));
-  const filterProduct = (filter, stock, color, size) => {
+  const [textPrice1, setTextPrice1] = React.useState(0);
+  const [textPrice2, setTextPrice2] = React.useState(0);
+
+
+  const filterProduct = (filter, stock, color,sort) => {
     let listProduct = [];
-    // if (filter === "best-selling") {
-    //   // quantity la so luong san pham ban ra
-    //   listProduct = products.sort((a, b) => b.quantity - a.quantity);
-    //   return listProduct;
-    // } else if (filter === "title-ascending") {
-    //   listProduct = products.sort((a, b) => a.tittle.localeCompare(b.tittle));
-    //   return listProduct;
-    // } else if (filter === "title-descending") {
-    //   listProduct = products.sort((a, b) => b.tittle.localeCompare(a.tittle));
-    //   return listProduct;
-    // } else if (filter === "price-ascending") {
-    //   listProduct = products.sort((a, b) => a.price - b.price);
-    //   return listProduct;
-    // } else if (filter === "price-descending") {
-    //   listProduct = products.sort((a, b) => b.price - a.price);
-    //   return listProduct;
-    // } else
+  
+
+
     if (stock === "inStock") {
       listProduct = products.filter((product) => product.outOfStock === false);
 
+      // loc theo gia price form to price to
+      if (filter === "forPrice") {
+        if (parseInt(priceFrom) >= 0 && parseInt(priceTo) <= 9999999) {
+          listProduct = products.filter(
+            (product) =>
+              product.price * 1 >= parseInt(priceFrom) &&
+              product.price * 1 <= parseInt(priceTo) &&
+              product.outOfStock === false
+          );
+          return listProduct;
+        }
+      }
       if (filter === "Panerai") {
         if (color === "red") {
           listProduct = products.filter(
@@ -77,8 +77,8 @@ const OurStore = () => {
           );
           return listProduct;
         }
-        if (color === "red" && size === "M") {
-          listProduct = listSizeM.filter(
+        if (color === "red") {
+          listProduct = products.filter(
             (product) =>
               product.outOfStock === false &&
               product.brand === "Panerai" &&
@@ -474,7 +474,7 @@ const OurStore = () => {
           return listProduct;
         }
         if (color === "black") {
-          listProduct = listSizeS.filter(
+          listProduct = products.filter(
             (product) =>
               product.outOfStock === false &&
               product.brand === "Rado" &&
@@ -545,61 +545,13 @@ const OurStore = () => {
           return listProduct;
         }
       }
+     
+
+
       return listProduct;
     } else if (stock === "outOfStock") {
       listProduct = products.filter((product) => product.outOfStock === true);
-
-      // if (filter === "Panerai") {
-      //   listProduct = products.filter(
-      //     (product) =>
-      //       product.outOfStock === true && product.brand === "Panerai"
-      //   );
-      //   return listProduct;
-      // }
-      // if (filter === "Longines") {
-      //   listProduct = products.filter(
-      //     (product) =>
-      //       product.outOfStock === true && product.brand === "Longines"
-      //   );
-      //   return listProduct;
-      // }
-      // if (filter === "Chopard") {
-      //   listProduct = products.filter(
-      //     (product) =>
-      //       product.outOfStock === true && product.brand === "Chopard"
-      //   );
-      //   return listProduct;
-      // }
-      // if (filter === "Gucci") {
-      //   listProduct = products.filter(
-      //     (product) => product.outOfStock === true && product.brand === "Gucci"
-      //   );
-      //   return listProduct;
-      // }
-      // if (filter === "Alasta") {
-      //   listProduct = products.filter(
-      //     (product) => product.outOfStock === true && product.brand === "Alasta"
-      //   );
-      //   return listProduct;
-      // }
-      // if (filter === "TUDOR") {
-      //   listProduct = products.filter(
-      //     (product) => product.outOfStock === true && product.brand === "TUDOR"
-      //   );
-      //   return listProduct;
-      // }
-      // if (filter === "Garmin Epix Pro") {
-      //   listProduct = products.filter(
-      //     (product) => product.outOfStock === true && product.brand === "Garmin"
-      //   );
-      //   return listProduct;
-      // }
-      // if (filter === "RADO") {
-      //   listProduct = products.filter(
-      //     (product) => product.outOfStock === true && product.brand === "Rado"
-      //   );
-      //   return listProduct;
-      // }
+      // loc theo gia price form to price to
 
       if (filter === "Panerai") {
         if (color === "red") {
@@ -1099,8 +1051,12 @@ const OurStore = () => {
       }
     }
   };
+
+  const [sort, setSort] = React.useState("best-selling");
   const handleFilterChange = (event) => {
-    setFilter(event.target.value);
+    setSort(event.target.value);
+    setStock("inStock");
+    console.log(sort)
   };
 
   // handle change stock radio
@@ -1194,10 +1150,14 @@ const OurStore = () => {
                         From
                       </label>
                       <input
-                        type="email"
+                        type="number"
                         class="form-control"
                         id="exampleFormControlInput1"
                         placeholder="from"
+                        value={textPrice1}
+                        onChange={(e) => {
+                          setTextPrice1(e.target.value);
+                        }}
                       />
                     </div>
                     <div class="mb-3">
@@ -1208,17 +1168,29 @@ const OurStore = () => {
                         To
                       </label>
                       <input
-                        type="email"
+                        type="number"
                         class="form-control"
                         id="exampleFormControlInput1"
                         placeholder="to"
+                        value={textPrice2}
+                        onChange={(e) => {
+                          setTextPrice2(e.target.value);
+                        }}
                       />
                     </div>
-                   
                   </div>
                   <div className="">
-                        <button className="button">Filter for price</button>
-                    </div>
+                    <button
+                      className="button"
+                      onClick={() => {
+                        setPriceFrom(parseInt(textPrice1));
+                        setPriceTo(parseInt(textPrice2));
+                        setFilter("forPrice");
+                      }}
+                    >
+                      Filter for price
+                    </button>
+                  </div>
                   <h5 className="sub-tittle">Size</h5>
                   <div>
                     <div className="form-check">
@@ -1277,7 +1249,7 @@ const OurStore = () => {
                       </label>
                     </div>
                     <div className="mt-3">
-                        <button className="button">Filter for size</button>
+                      <button className="button">Filter for size</button>
                     </div>
                   </div>
                 </div>
@@ -1341,13 +1313,13 @@ const OurStore = () => {
                       name=""
                       className="form-control form-select"
                       id=""
-                      value={filter}
+                      value={sort}
                       onChange={handleFilterChange}
                     >
-                      <option value="manual">Featured</option>
+                      {/* <option value="manual">Featured</option> */}
                       <option
                         value="best-selling"
-                        selected={filter === "best-selling" ? true : false}
+                        selected
                         // onSelect={() => {setFilter("best-selling");console.log(filterProduct(filter))}}
                       >
                         Best selling
@@ -1409,7 +1381,15 @@ const OurStore = () => {
               </div>
               <div className="product-list pb-5">
                 <div className="d-flex gap-10 flex-wrap">
-                  {filterProduct(filter, stock, color, size).map((product) => {
+                  {filterProduct(
+                    filter,
+                    stock,
+                    color,
+                    size,
+                    priceFrom,
+                    priceTo,
+                    sort
+                  ).map((product) => {
                     return (
                       <ProductCard
                         key={product.id}

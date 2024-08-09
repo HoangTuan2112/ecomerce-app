@@ -64,7 +64,7 @@ a {
 }
 /* Header start */
 .header-top-strip {
-  border: 1px solid var(--color-3b4149);
+
   background-color: var(--color-131921);
 }
 .header-upper {
@@ -101,7 +101,7 @@ a {
 .header-bottom .dropdown-item {
   padding: 20px;
   margin-bottom: 3px;
-  border-bottom: 1px solid var(--color-3b4149);
+  
 }
 .header-bottom .dropdown-item:hover {
   background-color: transparent;
@@ -113,7 +113,7 @@ footer {
   background-color: var(--color-232f3e);
 }
 footer:not(:first-child) {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
 }
 footer .input-group-text {
   background-color: var(--color-232f3e);
@@ -398,7 +398,9 @@ footer .input-group-text {
   background-color: brown;
   border-radius: 50%;
   border: 1px solid var(--color-131921);
+ text-align: center;
 }
+
 .random-products h5 {
   font-size: 14px;
   margin-bottom: 8px;

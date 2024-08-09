@@ -144,7 +144,7 @@
     "price": "8820",
     "img": "https://www.jurawatches.co.uk/cdn/shop/files/chpd-008-chopard-watch-happy-sport-278559-3001_78x.jpg?v=1691650749",
     "img2": "https://www.jurawatches.co.uk/cdn/shop/files/chpd-008-chopard-watch-happy-sport-278559-3001_2_78x.jpg?v=1691650749",
-    "rating": 21,
+    "rating": 5,
     "category": "category 1",
     "size": "S",
     "color": "black",

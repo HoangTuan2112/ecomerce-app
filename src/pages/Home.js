@@ -239,10 +239,46 @@ const Home = () => {
             <div className="col-12">
               <h3 className="section-heading">Featured Collection</h3>
             </div>
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
+            <ProductCard
+              img="https://www.jurawatches.co.uk/cdn/shop/files/rdo-1009-rado-watch-captain-cook-high-tech-ceramic-skeleton-r32150162_78x.jpg?v=1712579615"
+              title="Captain Cook High Tech Ceramic Skeleton"
+              price="4600"
+              rating={4}
+              img2="https://www.jurawatches.co.uk/cdn/shop/files/rdo-1009-rado-watch-captain-cook-high-tech-ceramic-skeleton-r32150162_4_78x.jpg?v=1712579615"
+              brand="Rado"
+              description="Rado Watch Captain Cook High Tech Ceramic Skeleton R32150162. The Captain Cook High-Tech Ceramic Skeleton showcases its innovative R808 movement, a marvel of contrasts, know-how and clever geometry, that allows a distinct view of the various parts. It’s equipped with an anti-magnetic and highly reliable Nivachron™ hairspring that has been fully tested in five positions and provides up to 80 hours of power reserve. The superb matt olive-green high-tech ceramic monobloc case is topped by a rose-gold-colour rotatable bezel with a matt olive-green ceramic insert to match the case and lugs, for visual harmony. The dial is clear and spartan, with generous geometric indices and hour/minute/second hands in rose-gold tones, treated with white Super-LumiNova® for best readability in low-light conditions. Thanks to a matching olive green high-tech ceramic triple-row bracelet with a titanium three-fold clasp, the new Captain Cook remains loyal with you through the most rugged and demanding of your explorations."
+              quantity="14"
+            />
+            <ProductCard
+              img="https://www.jurawatches.co.uk/cdn/shop/files/rdo-1009-rado-watch-captain-cook-high-tech-ceramic-skeleton-r32150162_78x.jpg?v=1712579615"
+              title="Captain Cook High Tech Ceramic Skeleton"
+              price="4600"
+              rating={4}
+              img2="https://www.jurawatches.co.uk/cdn/shop/files/rdo-1009-rado-watch-captain-cook-high-tech-ceramic-skeleton-r32150162_4_78x.jpg?v=1712579615"
+              brand="Rado"
+              description="Rado Watch Captain Cook High Tech Ceramic Skeleton R32150162. The Captain Cook High-Tech Ceramic Skeleton showcases its innovative R808 movement, a marvel of contrasts, know-how and clever geometry, that allows a distinct view of the various parts. It’s equipped with an anti-magnetic and highly reliable Nivachron™ hairspring that has been fully tested in five positions and provides up to 80 hours of power reserve. The superb matt olive-green high-tech ceramic monobloc case is topped by a rose-gold-colour rotatable bezel with a matt olive-green ceramic insert to match the case and lugs, for visual harmony. The dial is clear and spartan, with generous geometric indices and hour/minute/second hands in rose-gold tones, treated with white Super-LumiNova® for best readability in low-light conditions. Thanks to a matching olive green high-tech ceramic triple-row bracelet with a titanium three-fold clasp, the new Captain Cook remains loyal with you through the most rugged and demanding of your explorations."
+              quantity="14"
+            />
+            <ProductCard
+              img="https://www.jurawatches.co.uk/cdn/shop/files/rdo-1009-rado-watch-captain-cook-high-tech-ceramic-skeleton-r32150162_78x.jpg?v=1712579615"
+              title="Captain Cook High Tech Ceramic Skeleton"
+              price="4600"
+              rating={4}
+              img2="https://www.jurawatches.co.uk/cdn/shop/files/rdo-1009-rado-watch-captain-cook-high-tech-ceramic-skeleton-r32150162_4_78x.jpg?v=1712579615"
+              brand="Rado"
+              description="Rado Watch Captain Cook High Tech Ceramic Skeleton R32150162. The Captain Cook High-Tech Ceramic Skeleton showcases its innovative R808 movement, a marvel of contrasts, know-how and clever geometry, that allows a distinct view of the various parts. It’s equipped with an anti-magnetic and highly reliable Nivachron™ hairspring that has been fully tested in five positions and provides up to 80 hours of power reserve. The superb matt olive-green high-tech ceramic monobloc case is topped by a rose-gold-colour rotatable bezel with a matt olive-green ceramic insert to match the case and lugs, for visual harmony. The dial is clear and spartan, with generous geometric indices and hour/minute/second hands in rose-gold tones, treated with white Super-LumiNova® for best readability in low-light conditions. Thanks to a matching olive green high-tech ceramic triple-row bracelet with a titanium three-fold clasp, the new Captain Cook remains loyal with you through the most rugged and demanding of your explorations."
+              quantity="14"
+            />
+            <ProductCard
+              img="https://www.jurawatches.co.uk/cdn/shop/files/rdo-1009-rado-watch-captain-cook-high-tech-ceramic-skeleton-r32150162_78x.jpg?v=1712579615"
+              title="Captain Cook High Tech Ceramic Skeleton"
+              price="4600"
+              rating={4}
+              img2="https://www.jurawatches.co.uk/cdn/shop/files/rdo-1009-rado-watch-captain-cook-high-tech-ceramic-skeleton-r32150162_4_78x.jpg?v=1712579615"
+              brand="Rado"
+              description="Rado Watch Captain Cook High Tech Ceramic Skeleton R32150162. The Captain Cook High-Tech Ceramic Skeleton showcases its innovative R808 movement, a marvel of contrasts, know-how and clever geometry, that allows a distinct view of the various parts. It’s equipped with an anti-magnetic and highly reliable Nivachron™ hairspring that has been fully tested in five positions and provides up to 80 hours of power reserve. The superb matt olive-green high-tech ceramic monobloc case is topped by a rose-gold-colour rotatable bezel with a matt olive-green ceramic insert to match the case and lugs, for visual harmony. The dial is clear and spartan, with generous geometric indices and hour/minute/second hands in rose-gold tones, treated with white Super-LumiNova® for best readability in low-light conditions. Thanks to a matching olive green high-tech ceramic triple-row bracelet with a titanium three-fold clasp, the new Captain Cook remains loyal with you through the most rugged and demanding of your explorations."
+              quantity="14"
+            />
           </div>
         </div>
       </section>
@@ -333,10 +369,46 @@ const Home = () => {
               <h3 className="section-heading">Our Popular Products</h3>
             </div>
             <div className="row">
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
+              <ProductCard
+                img="https://www.jurawatches.co.uk/cdn/shop/files/rdo-1009-rado-watch-captain-cook-high-tech-ceramic-skeleton-r32150162_78x.jpg?v=1712579615"
+                title="Captain Cook High Tech Ceramic Skeleton"
+                price="4600"
+                rating={4}
+                img2="https://www.jurawatches.co.uk/cdn/shop/files/rdo-1009-rado-watch-captain-cook-high-tech-ceramic-skeleton-r32150162_4_78x.jpg?v=1712579615"
+                brand="Rado"
+                description="Rado Watch Captain Cook High Tech Ceramic Skeleton R32150162. The Captain Cook High-Tech Ceramic Skeleton showcases its innovative R808 movement, a marvel of contrasts, know-how and clever geometry, that allows a distinct view of the various parts. It’s equipped with an anti-magnetic and highly reliable Nivachron™ hairspring that has been fully tested in five positions and provides up to 80 hours of power reserve. The superb matt olive-green high-tech ceramic monobloc case is topped by a rose-gold-colour rotatable bezel with a matt olive-green ceramic insert to match the case and lugs, for visual harmony. The dial is clear and spartan, with generous geometric indices and hour/minute/second hands in rose-gold tones, treated with white Super-LumiNova® for best readability in low-light conditions. Thanks to a matching olive green high-tech ceramic triple-row bracelet with a titanium three-fold clasp, the new Captain Cook remains loyal with you through the most rugged and demanding of your explorations."
+                quantity="14"
+              />
+              <ProductCard
+                img="https://www.jurawatches.co.uk/cdn/shop/files/rdo-1009-rado-watch-captain-cook-high-tech-ceramic-skeleton-r32150162_78x.jpg?v=1712579615"
+                title="Captain Cook High Tech Ceramic Skeleton"
+                price="4600"
+                rating={4}
+                img2="https://www.jurawatches.co.uk/cdn/shop/files/rdo-1009-rado-watch-captain-cook-high-tech-ceramic-skeleton-r32150162_4_78x.jpg?v=1712579615"
+                brand="Rado"
+                description="Rado Watch Captain Cook High Tech Ceramic Skeleton R32150162. The Captain Cook High-Tech Ceramic Skeleton showcases its innovative R808 movement, a marvel of contrasts, know-how and clever geometry, that allows a distinct view of the various parts. It’s equipped with an anti-magnetic and highly reliable Nivachron™ hairspring that has been fully tested in five positions and provides up to 80 hours of power reserve. The superb matt olive-green high-tech ceramic monobloc case is topped by a rose-gold-colour rotatable bezel with a matt olive-green ceramic insert to match the case and lugs, for visual harmony. The dial is clear and spartan, with generous geometric indices and hour/minute/second hands in rose-gold tones, treated with white Super-LumiNova® for best readability in low-light conditions. Thanks to a matching olive green high-tech ceramic triple-row bracelet with a titanium three-fold clasp, the new Captain Cook remains loyal with you through the most rugged and demanding of your explorations."
+                quantity="14"
+              />
+              <ProductCard
+                img="https://www.jurawatches.co.uk/cdn/shop/files/rdo-1009-rado-watch-captain-cook-high-tech-ceramic-skeleton-r32150162_78x.jpg?v=1712579615"
+                title="Captain Cook High Tech Ceramic Skeleton"
+                price="4600"
+                rating={4}
+                img2="https://www.jurawatches.co.uk/cdn/shop/files/rdo-1009-rado-watch-captain-cook-high-tech-ceramic-skeleton-r32150162_4_78x.jpg?v=1712579615"
+                brand="Rado"
+                description="Rado Watch Captain Cook High Tech Ceramic Skeleton R32150162. The Captain Cook High-Tech Ceramic Skeleton showcases its innovative R808 movement, a marvel of contrasts, know-how and clever geometry, that allows a distinct view of the various parts. It’s equipped with an anti-magnetic and highly reliable Nivachron™ hairspring that has been fully tested in five positions and provides up to 80 hours of power reserve. The superb matt olive-green high-tech ceramic monobloc case is topped by a rose-gold-colour rotatable bezel with a matt olive-green ceramic insert to match the case and lugs, for visual harmony. The dial is clear and spartan, with generous geometric indices and hour/minute/second hands in rose-gold tones, treated with white Super-LumiNova® for best readability in low-light conditions. Thanks to a matching olive green high-tech ceramic triple-row bracelet with a titanium three-fold clasp, the new Captain Cook remains loyal with you through the most rugged and demanding of your explorations."
+                quantity="14"
+              />
+              <ProductCard
+                img="https://www.jurawatches.co.uk/cdn/shop/files/rdo-1009-rado-watch-captain-cook-high-tech-ceramic-skeleton-r32150162_78x.jpg?v=1712579615"
+                title="Captain Cook High Tech Ceramic Skeleton"
+                price="4600"
+                rating={4}
+                img2="https://www.jurawatches.co.uk/cdn/shop/files/rdo-1009-rado-watch-captain-cook-high-tech-ceramic-skeleton-r32150162_4_78x.jpg?v=1712579615"
+                brand="Rado"
+                description="Rado Watch Captain Cook High Tech Ceramic Skeleton R32150162. The Captain Cook High-Tech Ceramic Skeleton showcases its innovative R808 movement, a marvel of contrasts, know-how and clever geometry, that allows a distinct view of the various parts. It’s equipped with an anti-magnetic and highly reliable Nivachron™ hairspring that has been fully tested in five positions and provides up to 80 hours of power reserve. The superb matt olive-green high-tech ceramic monobloc case is topped by a rose-gold-colour rotatable bezel with a matt olive-green ceramic insert to match the case and lugs, for visual harmony. The dial is clear and spartan, with generous geometric indices and hour/minute/second hands in rose-gold tones, treated with white Super-LumiNova® for best readability in low-light conditions. Thanks to a matching olive green high-tech ceramic triple-row bracelet with a titanium three-fold clasp, the new Captain Cook remains loyal with you through the most rugged and demanding of your explorations."
+                quantity="14"
+              />
             </div>
           </div>
         </div>

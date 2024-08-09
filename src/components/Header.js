@@ -114,7 +114,7 @@ const Header = () => {
                       <img src="/images/menu.svg"></img>
                       <span className="me-5 d-inline-block">
                         {" "}
-                        Shop categories
+                        Shop brands
                       </span>
                     </button>
                     <ul
@@ -123,17 +123,42 @@ const Header = () => {
                     >
                       <li>
                         <Link class="dropdown-item text-white" href="#">
-                          Action
+                        Panerai
                         </Link>
                       </li>
                       <li>
                         <Link class="dropdown-item text-white" href="#">
-                          Another action
+                        Longines
                         </Link>
                       </li>
                       <li>
                         <Link class="dropdown-item text-white" href="#">
-                          Something else here
+                        Chopard
+                        </Link>
+                      </li>
+                      <li>
+                        <Link class="dropdown-item text-white" href="#">
+                        Gucci
+                        </Link>
+                      </li>
+                      <li>
+                        <Link class="dropdown-item text-white" href="#">
+                        Alasta
+                        </Link>
+                      </li>
+                      <li>
+                        <Link class="dropdown-item text-white" href="#">
+                        TUDOR
+                        </Link>
+                      </li>
+                      <li>
+                        <Link class="dropdown-item text-white" href="#">
+                        Garmin Epix Pro
+                        </Link>
+                      </li>
+                      <li>
+                        <Link class="dropdown-item text-white" href="#">
+                        RADO
                         </Link>
                       </li>
                     </ul>

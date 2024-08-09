@@ -45,7 +45,12 @@ const Color = (props) => {
             console.log(color);
           }}
         ></li>
-        <button onClick={()=>setColor("all")}>all</button>
+       <li className="bg-white text-dark text-center" 
+          value={"red"}
+          onClick={() => {
+            setColor("all");
+            console.log(color);
+          }}><p>All</p></li>
      
       </ul>
     </div>

@@ -8,36 +8,36 @@ const SpecialProduct = () => {
         <div className="d-flex justify-content-between">
           <div>
             <img
-              src="/images/watch.jpg"
+              src="https://www.jurawatches.co.uk/cdn/shop/files/chpd-008-chopard-watch-happy-sport-278559-3001_78x.jpg?v=1691650749"
               alt="watch"
               className="special-product-img img-fluid"
             />
           </div>
           <div className="special-product-content">
-            <h5 className="brand">Havels</h5>
-            <h6 className="tittle">Samsung Galaxy Note 20 Ultra 5G</h6>
+            <h5 className="brand">Chopard</h5>
+            <h6 className="tittle">Happy Sport 36</h6>
             <ReactStars
               count={5}
               edit={false}
-              value={3}
+              value={5}
               size={24}
               activeColor="#ffd700"
             />
             <p className="price">
-              <span className="red-p">$100</span>&nbsp;<strike>$332</strike>
+              <span className="red-p">$8820</span>&nbsp;<strike>$9500</strike>
             </p>
             <div className="discount-till d-flex align-items-center gap-10">
               <p className="mb-0">
                 <b>5 days</b>
               </p>
               <div className="d-flex gap-10 align-items-center">
-                <span className="badge rounded-circle p-2 bg-danger">1</span>:
-                <span className="badge rounded-circle p-2 bg-danger">1</span>:
-                <span className="badge rounded-circle p-2 bg-danger">1</span>
+                <span className="badge rounded-circle p-2 bg-danger">23</span>:
+                <span className="badge rounded-circle p-2 bg-danger">59</span>:
+                <span className="badge rounded-circle p-2 bg-danger">59</span>
               </div>
             </div>
             <div className="prod-count my-3">
-              <p>Product: 5</p>
+              <p>Product: 8</p>
               <div class="progress">
                 <div
                   class="progress-bar"

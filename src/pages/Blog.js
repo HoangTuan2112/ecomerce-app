@@ -12,14 +12,21 @@ const Blog = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-3">
-              <div className="filter-card mb-3">
-                <h3 className="filter-tittle">Find by Categories</h3>
+            <div className="filter-card mb-3">
+                <h3 className="filter-tittle">Shop By Brand</h3>
                 <div>
                   <ul className="ps-0">
-                    <li>Watch</li>
-                    <li>Tv</li>
-                    <li>Camera</li>
-                    <li>Laptop</li>
+                    <li >Panerai</li>
+                    <li >Longines</li>
+                    <li >Chopard</li>
+                    <li>Gucci</li>
+                    <li >Alasta</li>
+                    <li>TUDOR </li>
+                    <li >
+                      Garmin Epix Pro
+                    </li>
+                    <li >RADO</li>
+                    <li >All</li>
                   </ul>
                 </div>
               </div>
