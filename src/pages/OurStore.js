@@ -1392,7 +1392,7 @@ const OurStore = () => {
                         onClick={() => {
                           setGrid(3);
                         }}
-                        src="/images/gr4.svg"
+                      src={`${process.env.PUBLIC_URL}/images/gr4.svg`}
                         className="d-block img-fluid"
                         alt="grid-view"
                       />{" "}
@@ -1400,7 +1400,7 @@ const OurStore = () => {
                         onClick={() => {
                           setGrid(4);
                         }}
-                        src="/images/gr3.svg"
+                      src={`${process.env.PUBLIC_URL}/images/gr3.svg`}
                         className="d-block img-fluid"
                         alt="grid-view"
                       />
@@ -1408,7 +1408,7 @@ const OurStore = () => {
                         onClick={() => {
                           setGrid(6);
                         }}
-                        src="/images/gr2.svg"
+                        src={`${process.env.PUBLIC_URL}/images/gr2.svg`}
                         className="d-block img-fluid"
                         alt="grid-view"
                       />
@@ -1416,7 +1416,7 @@ const OurStore = () => {
                         onClick={() => {
                           setGrid(12);
                         }}
-                        src="/images/gr.svg"
+                        src={`${process.env.PUBLIC_URL}/images/gr.svg`}
                         className="d-block img-fluid"
                         alt="grid-view"
                       />

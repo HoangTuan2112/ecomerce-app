@@ -17,7 +17,7 @@ const Home = () => {
               <div className="main-banner  position-relative">
                 <img
                   className="img-fluid rounded-3"
-                  src="/images/main-banner-1.jpg"
+                  src={`${process.env.PUBLIC_URL}/images/main-banner-1.jpg`}
                   alt="main banner"
                 ></img>
                 <div className="main-banner-contetnt position-absolute ">
@@ -33,7 +33,7 @@ const Home = () => {
                 <div className="small-banner  position-relative">
                   <img
                     className="img-fluid rounded-3"
-                    src="/images/catbanner-01.jpg"
+                    src={`${process.env.PUBLIC_URL}/images/catbanner-01.jpg`}
                     alt="main banner"
                   ></img>
                   <div className="small-banner-contetnt position-absolute ">
@@ -45,7 +45,7 @@ const Home = () => {
                 <div className="small-banner  position-relative">
                   <img
                     className="img-fluid rounded-3"
-                    src="/images/catbanner-03.jpg"
+                    src={`${process.env.PUBLIC_URL}/images/catbanner-03.jpg`}
                     alt="main banner"
                   ></img>
                   <div className="small-banner-contetnt position-absolute ">
@@ -57,7 +57,7 @@ const Home = () => {
                 <div className="small-banner  position-relative">
                   <img
                     className="img-fluid rounded-3"
-                    src="/images/catbanner-02.jpg"
+                    src={`${process.env.PUBLIC_URL}/images/catbanner-02.jpg`}
                     alt="main banner"
                   ></img>
                   <div className="small-banner-contetnt position-absolute ">
@@ -69,7 +69,7 @@ const Home = () => {
                 <div className="small-banner  position-relative">
                   <img
                     className="img-fluid rounded-3"
-                    src="/images/catbanner-04.jpg"
+                    src={`${process.env.PUBLIC_URL}/images/catbanner-04.jpg`}
                     alt="main banner"
                   ></img>
                   <div className="small-banner-contetnt position-absolute ">
@@ -88,35 +88,35 @@ const Home = () => {
           <div className="col-12">
             <div className="services d-flex align-items-center justify-content-between">
               <div className="d-flex align-items-center justify-content-betwen">
-                <img src="/images/service.png" alt="service"></img>
+                <img src={`${process.env.PUBLIC_URL}/images/service.png`} alt="service"></img>
                 <div>
                   <h6>Free Shipping</h6>
                   <p className="mb-0">From all orders over $100</p>
                 </div>
               </div>
               <div className="d-flex align-items-center justify-content-betwen">
-                <img src="/images/service-02.png" alt="service"></img>
+                <img src={`${process.env.PUBLIC_URL}/images/service-02.png`} alt="service"></img>
                 <div>
                   <h6>Daily Surprise Offers</h6>
                   <p className="mb-0">Save up to 25% off</p>
                 </div>
               </div>
               <div className="d-flex align-items-center justify-content-betwen">
-                <img src="/images/service-03.png" alt="service"></img>
+                <img src={`${process.env.PUBLIC_URL}/images/service-03.png`} alt="service"></img>
                 <div>
                   <h6>Support 24/7</h6>
                   <p className="mb-0">Shop with an expert</p>
                 </div>
               </div>
               <div className="d-flex align-items-center justify-content-betwen">
-                <img src="/images/service-04.png" alt="service"></img>
+                <img src={`${process.env.PUBLIC_URL}/images/service-04.png` }alt="service"></img>
                 <div>
                   <h6>Affordable Prices</h6>
                   <p className="mb-0">Get Factory direct price</p>
                 </div>
               </div>
               <div className="d-flex align-items-center justify-content-betwen">
-                <img src="/images/service-05.png" alt="service"></img>
+                <img src={`${process.env.PUBLIC_URL}/images/service-05.png`} alt="service"></img>
                 <div>
                   <h6>Secure Payments</h6>
                   <p className="mb-0">100% Protected Payments</p>
@@ -297,7 +297,7 @@ const Home = () => {
               <div className="col-3">
                 <div className="famous-card position-relative">
                   <img
-                    src="/images/famous-1.jpg"
+                    src={`${process.env.PUBLIC_URL}/images/famous-1.jpg`}
                     className="img-fluid"
                     alt="famous"
                   ></img>
@@ -311,7 +311,7 @@ const Home = () => {
               <div className="col-3">
                 <div className="famous-card position-relative">
                   <img
-                    src="/images/famous-2.jpg"
+                    src={`${process.env.PUBLIC_URL}/images/famous-2.jpg`}
                     className="img-fluid"
                     alt="famous"
                   ></img>
@@ -325,7 +325,7 @@ const Home = () => {
               <div className="col-3">
                 <div className="famous-card position-relative">
                   <img
-                    src="/images/famous-3.jpg"
+                    src={`${process.env.PUBLIC_URL}/images/famous-3.jpg`}
                     className="img-fluid"
                     alt="famous"
                   ></img>
@@ -341,7 +341,7 @@ const Home = () => {
               <div className="col-3">
                 <div className="famous-card position-relative">
                   <img
-                    src="/images/famous-4.jpg"
+                    src={`${process.env.PUBLIC_URL}/images/famous-4.jpg`}
                     className="img-fluid"
                     alt="famous"
                   ></img>
@@ -435,28 +435,28 @@ const Home = () => {
                 <div className="marquee-inner-wrapper bg-white p-3 card-wrapper">
                   <Marquee className="d-flex">
                     <div className="mx-4 w-25">
-                      <img src="/images/brand-01.png" alt="brand"></img>
+                      <img src={`${process.env.PUBLIC_URL}/images/brand-01.png`} alt="brand"></img>
                     </div>
                     <div className="mx-4 w-25">
-                      <img src="/images/brand-02.png" alt="brand"></img>
+                      <img src={`${process.env.PUBLIC_URL}/images/brand-02.png`} alt="brand"></img>
                     </div>
                     <div className="mx-4 w-25">
-                      <img src="/images/brand-03.png" alt="brand"></img>
+                      <img src={`${process.env.PUBLIC_URL}/images/brand-03.png`} alt="brand"></img>
                     </div>
                     <div className="mx-4 w-25">
-                      <img src="/images/brand-04.png" alt="brand"></img>
+                      <img src={`${process.env.PUBLIC_URL}/images/brand-04.png`} alt="brand"></img>
                     </div>
                     <div className="mx-4 w-25">
-                      <img src="/images/brand-05.png" alt="brand"></img>
+                      <img src={`${process.env.PUBLIC_URL}/images/brand-05.png`} alt="brand"></img>
                     </div>
                     <div className="mx-4 w-25">
-                      <img src="/images/brand-06.png" alt="brand"></img>
+                      <img src={`${process.env.PUBLIC_URL}/images/brand-06.png`} alt="brand"></img>
                     </div>
                     <div className="mx-4 w-25">
-                      <img src="/images/brand-07.png" alt="brand"></img>
+                      <img src={`${process.env.PUBLIC_URL}/images/brand-07.png`} alt="brand"></img>
                     </div>
                     <div className="mx-4 w-25">
-                      <img src="/images/brand-08.png" alt="brand"></img>
+                      <img src={`${process.env.PUBLIC_URL}/images/brand-08.png`} alt="brand"></img>
                     </div>
                   </Marquee>
                 </div>

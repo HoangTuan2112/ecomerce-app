@@ -55,7 +55,7 @@ const Header = () => {
                     to={"/compare-product"}
                     className="d-flex align-items-center gap-10"
                   >
-                    <img src="/images/compare.svg" alt="compare"></img>
+                    <img src={`${process.env.PUBLIC_URL}/images/compare.svg`} alt="compare"></img>
                     <p className="mb-0 text-white">
                       Compare <br></br> Products
                     </p>
@@ -66,7 +66,7 @@ const Header = () => {
                     to={"/wishlist"}
                     className="d-flex align-items-center gap-10"
                   >
-                    <img src="/images/wishlist.svg" alt="wishlist"></img>
+                    <img src={`${process.env.PUBLIC_URL}/images/wishlist.svg`} alt="wishlist"></img>
                     <p className="mb-0 text-white">
                       Favourite <br></br> Wislist
                     </p>
@@ -77,7 +77,7 @@ const Header = () => {
                     to={"/login"}
                     className="d-flex align-items-center gap-10"
                   >
-                    <img src="/images/user.svg" alt="user"></img>
+                    <img src={`${process.env.PUBLIC_URL}/images/user.svg`} alt="user"></img>
                     <p className="mb-0 text-white">
                       Log in <br /> My account
                     </p>
@@ -88,7 +88,7 @@ const Header = () => {
                     to={"/cart"}
                     className="d-flex align-items-center gap-10"
                   >
-                    <img src="/images/cart.svg" alt="cart"></img>
+                    <img src={`${process.env.PUBLIC_URL}/images/cart.svg`} alt="cart"></img>
                     <div className="d-flex flex-column gap-10">
                       <span className="badge bg-white text-dark">{cart.length}</span>
                       <p className="text-white">$ {money}</p>
@@ -114,7 +114,7 @@ const Header = () => {
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      <img src="/images/menu.svg"></img>
+                      <img src={`${process.env.PUBLIC_URL}/images/menu.svg`}></img>
                       <span className="me-5 d-inline-block">
                         {" "}
                         Shop brands

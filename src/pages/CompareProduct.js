@@ -14,7 +14,7 @@ const CompareProduct = () => {
             <div className="col-3">
               <div className="compare-product-card position-relative">
                 <img
-                  src="/images/cross.svg"
+                  src={`${process.env.PUBLIC_URL}/images/cross.svg`}
                   alt="cross"
                   className="position-absolute top-0 end-0  "
                   width={"20px"}
@@ -22,7 +22,7 @@ const CompareProduct = () => {
                 />
                 <div className="product-card-image">
                   <img
-                    src="/images/watch.jpg"
+                    src={`${process.env.PUBLIC_URL}/images/watch.jpg`}
                     alt="watch"
                     className="img-fluid"
                   />
@@ -64,7 +64,7 @@ const CompareProduct = () => {
             <div className="col-3">
               <div className="compare-product-card position-relative">
                 <img
-                  src="/images/cross.svg"
+                  src={`${process.env.PUBLIC_URL}/images/cross.svg`}
                   alt="cross"
                   className="position-absolute top-0 end-0  "
                   width={"20px"}
@@ -72,7 +72,7 @@ const CompareProduct = () => {
                 />
                 <div className="product-card-image">
                   <img
-                    src="/images/watch.jpg"
+                    src={`${process.env.PUBLIC_URL}/images/watch.jpg`}
                     alt="watch"
                     className="img-fluid"
                   />

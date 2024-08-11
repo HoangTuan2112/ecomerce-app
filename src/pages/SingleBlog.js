@@ -23,7 +23,7 @@ const SingleBlog = () => {
                   A beautiful sunday morning renaissance
                 </h3>
                 <img
-                  src="/images/blog-1.jpg"
+                  src={`${process.env.PUBLIC_URL}/images/blog-1.jpg`}
                   class="img-fluid w-100 my-4"
                   alt="blog"
                 ></img>
