@@ -5,11 +5,16 @@ import ReactStars from "react-rating-stars-component";
 import ProductCard from "../components/ProductCard";
 import Color from "../components/Color";
 import axios from "axios";
+import { useDispatch, useSelector } from "react-redux";
+import { getList } from "../features/productReducer";
 
 const OurStore = () => {
   const [grid, setGrid] = React.useState(4);
   const url = "https://669f2742b132e2c136fcdd36.mockapi.io/student/student";
-  const [products, setProducts] = React.useState([]);
+  // const [products, setProducts] = React.useState([]);
+  const dispatch = useDispatch();
+  const { products } = useSelector((state) => state.products);
+  console.log(products)
   const [stock, setStock] = React.useState("inStock");
   const countStock = products.filter(
     (product) => product.outOfStock !== true
@@ -1104,13 +1109,17 @@ const OurStore = () => {
 
   }
 
-  useEffect(() => {
-    axios.get(url).then((res) => {
-      console.log(res.data);
-      setProducts(res.data);
-    });
-  }, []);
+  // useEffect(() => {
+  //   axios.get(url).then((res) => {
+  //     console.log(res.data);
+  //     setProducts(res.data);
+  //   });
+  // }, []);
 
+  useEffect(() => {
+    dispatch(getList());
+  
+  }, [dispatch]);
   const [filter, setFilter] = React.useState("manual");
   return (
     <div>
@@ -1438,6 +1447,7 @@ const OurStore = () => {
                         description={product.description}
                         quantity={product.quantity}
                         grid={grid}
+                        id={product.id}
                       />
                     );
                   })}

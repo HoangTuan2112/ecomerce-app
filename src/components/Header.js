@@ -1,7 +1,10 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
+import { useSelector } from "react-redux";
 const Header = () => {
+  const cart = useSelector((state) => state.cart.cart);
+  const money = useSelector((state) => state.cart.money);
   return (
     <div className="header">
       <header className="header-top-strip py-3">
@@ -87,8 +90,8 @@ const Header = () => {
                   >
                     <img src="/images/cart.svg" alt="cart"></img>
                     <div className="d-flex flex-column gap-10">
-                      <span className="badge bg-white text-dark">0</span>
-                      <p className="text-white">$5000</p>
+                      <span className="badge bg-white text-dark">{cart.length}</span>
+                      <p className="text-white">$ {money}</p>
                     </div>
                   </Link>
                 </div>
