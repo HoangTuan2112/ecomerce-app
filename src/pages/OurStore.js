@@ -5,20 +5,23 @@ import ReactStars from "react-rating-stars-component";
 import ProductCard from "../components/ProductCard";
 import Color from "../components/Color";
 import axios from "axios";
-import { useDispatch, useSelector } from "react-redux";
-import { fetchProductRequest } from "../features/productReducer";
+
 const OurStore = () => {
   const [grid, setGrid] = React.useState(4);
   const url = "https://669f2742b132e2c136fcdd36.mockapi.io/student/student";
   const [products, setProducts] = React.useState([]);
-
-  // so luong kho
+  const [stock, setStock] = React.useState("inStock");
   const countStock = products.filter(
     (product) => product.outOfStock !== true
   ).length;
   const countOutStock = products.filter(
     (product) => product.outOfStock === true
   ).length;
+ 
+  // so luong kho
+
+
+
 
   // so luong size
   const countSizeS = products.filter((product) =>
@@ -36,7 +39,7 @@ const OurStore = () => {
   const randomNumber = Math.floor(Math.random() * products.length);
   const randomProducts = [products[randomNumber], products[randomNumber + 1]];
 
-  const [stock, setStock] = React.useState("inStock");
+ 
   const [size, setSize] = React.useState("");
 
   const listSizeS = products.filter((product) => product.size.includes("S"));
@@ -47,6 +50,9 @@ const OurStore = () => {
   const [textPrice2, setTextPrice2] = React.useState(0);
 
   const [flag, setFlag] = React.useState("best-selling");
+  const [color, setColor] = React.useState("");
+  const [priceFrom, setPriceFrom] = React.useState("");
+  const [priceTo, setPriceTo] = React.useState("");
   const filterProduct = (filter, stock, color,sort) => {
     let listProduct = [];
   
@@ -1065,9 +1071,7 @@ const OurStore = () => {
     setStock(ev.target.value);
   };
 
-  const [color, setColor] = React.useState("");
-  const [priceFrom, setPriceFrom] = React.useState("");
-  const [priceTo, setPriceTo] = React.useState("");
+
 
   // handle sort
   const handleSort= (flag ,clocks)=>{
@@ -1146,6 +1150,7 @@ const OurStore = () => {
                         name="stockOption"
                         value="inStock"
                         id="inStock"
+                        checked={stock === "inStock"}
                         onChange={handleChange}
                       />
                       <label className="form-check-label" htmlFor="inStock">
@@ -1371,7 +1376,7 @@ const OurStore = () => {
                   </div>
                   <div className="d-flex align-items-center gap-10">
                     <p className="totalproducts mb-0">
-                      {products.length} products
+                      {stock=="inStock"?countStock:countOutStock} products
                     </p>
                     <div className="d-flex gap-10 align-items-center grid">
                       <img
