@@ -46,7 +46,7 @@ const OurStore = () => {
   const [textPrice1, setTextPrice1] = React.useState(0);
   const [textPrice2, setTextPrice2] = React.useState(0);
 
-
+  const [flag, setFlag] = React.useState("best-selling");
   const filterProduct = (filter, stock, color,sort) => {
     let listProduct = [];
   
@@ -1052,11 +1052,10 @@ const OurStore = () => {
     }
   };
 
-  const [sort, setSort] = React.useState("best-selling");
+
   const handleFilterChange = (event) => {
-    setSort(event.target.value);
-    setStock("inStock");
-    console.log(sort)
+    setFlag(event.target.value);
+    
   };
 
   // handle change stock radio
@@ -1069,6 +1068,38 @@ const OurStore = () => {
   const [color, setColor] = React.useState("");
   const [priceFrom, setPriceFrom] = React.useState("");
   const [priceTo, setPriceTo] = React.useState("");
+
+  // handle sort
+  const handleSort= (flag ,clocks)=>{
+   
+    let sortList=[];
+    if(flag==="best-selling"){
+    sortList=  clocks.sort((a,b)=>b.quantity-a.quantity)
+    return sortList;
+    }
+    else if(flag==="price-ascending"){
+     sortList= clocks.sort((a,b)=>a.price-b.price)
+      return sortList;
+    }
+    else if(flag==="price-descending"){
+     sortList= clocks.sort((a,b)=>b.price-a.price)
+      return sortList;
+    }
+    else if(flag==="title-ascending"){
+      sortList=clocks.sort((a,b)=>a.tittle.localeCompare(b.tittle))
+       return sortList;
+    }
+    else if(flag==="title-descending"){
+     sortList= clocks.sort((a,b)=>b.tittle.localeCompare(a.tittle))
+      return sortList;
+    }
+  
+
+    
+
+
+  }
+
   useEffect(() => {
     axios.get(url).then((res) => {
       console.log(res.data);
@@ -1313,14 +1344,14 @@ const OurStore = () => {
                       name=""
                       className="form-control form-select"
                       id=""
-                      value={sort}
+                      value={flag}
                       onChange={handleFilterChange}
                     >
-                      {/* <option value="manual">Featured</option> */}
+                     
                       <option
                         value="best-selling"
                         selected
-                        // onSelect={() => {setFilter("best-selling");console.log(filterProduct(filter))}}
+                       
                       >
                         Best selling
                       </option>
@@ -1381,15 +1412,15 @@ const OurStore = () => {
               </div>
               <div className="product-list pb-5">
                 <div className="d-flex gap-10 flex-wrap">
-                  {filterProduct(
+                  {handleSort(flag,filterProduct(
                     filter,
                     stock,
                     color,
                     size,
                     priceFrom,
                     priceTo,
-                    sort
-                  ).map((product) => {
+                 
+                  )).map((product) => {
                     return (
                       <ProductCard
                         key={product.id}
