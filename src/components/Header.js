@@ -3,7 +3,7 @@ import { NavLink, Link } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
 const Header = () => {
   return (
-    <>
+    <div className="header">
       <header className="header-top-strip py-3">
         <div className="container-xxl">
           <div className="row">
@@ -185,7 +185,7 @@ const Header = () => {
           </div>
         </div>
       </header>
-    </>
+    </div>
   );
 };
 

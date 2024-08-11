@@ -63,8 +63,9 @@ a {
   color: var(--color-131921);
 }
 /* Header start */
-.header-top-strip {
 
+.header-top-strip {
+  
   background-color: var(--color-131921);
 }
 .header-upper {
