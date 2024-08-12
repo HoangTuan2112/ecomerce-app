@@ -40,7 +40,11 @@ const SingleProduct = () => {
               </div>
               <div className="product-image">
                 <div>
-                  <img src={product.img2}></img>
+                  <img
+                    src={product.img2}
+                    width={"500px"}
+                    height={"400px"}
+                  ></img>
                 </div>
               </div>
             </div>

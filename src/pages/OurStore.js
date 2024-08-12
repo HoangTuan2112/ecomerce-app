@@ -14,16 +14,19 @@ const OurStore = () => {
   // const [products, setProducts] = React.useState([]);
   const dispatch = useDispatch();
   const { products } = useSelector((state) => state.products);
-  console.log(products)
+ 
+
   const [stock, setStock] = React.useState("inStock");
+
+  // so luong san pham con hang
   const countStock = products.filter(
     (product) => product.outOfStock !== true
   ).length;
+  // so luong san pham het hang
   const countOutStock = products.filter(
     (product) => product.outOfStock === true
   ).length;
- 
-  // so luong kho
+
 
 
 
@@ -41,16 +44,13 @@ const OurStore = () => {
   const countSizeXL = products.filter((product) =>
     product.size.includes("XL")
   ).length;
+
+  //random 2 san pham
   const randomNumber = Math.floor(Math.random() * products.length);
   const randomProducts = [products[randomNumber], products[randomNumber + 1]];
 
- 
-  const [size, setSize] = React.useState("");
 
-  const listSizeS = products.filter((product) => product.size.includes("S"));
-  const listSizeM = products.filter((product) => product.size.includes("M"));
-  const listSizeL = products.filter((product) => product.size.includes("L"));
-  const listSizeXL = products.filter((product) => product.size.includes("XL"));
+  const [size, setSize] = React.useState("");
   const [textPrice1, setTextPrice1] = React.useState(0);
   const [textPrice2, setTextPrice2] = React.useState(0);
 
@@ -58,11 +58,13 @@ const OurStore = () => {
   const [color, setColor] = React.useState("");
   const [priceFrom, setPriceFrom] = React.useState("");
   const [priceTo, setPriceTo] = React.useState("");
+
+  // loc san pham
   const filterProduct = (filter, stock, color,sort) => {
     let listProduct = [];
   
 
-
+    // loc san pham con hang theo brand+color theo gia
     if (stock === "inStock") {
       listProduct = products.filter((product) => product.outOfStock === false);
 
